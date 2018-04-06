@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -49,22 +49,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 1800 1400 2200 1550
-U 5AC7805B
-F0 "interface" 60
-F1 "interface.sch" 60
-$EndSheet
-$Sheet
-S 5100 1400 2200 1550
-U 5AC7807D
-F0 "ethernet" 60
-F1 "ethernet.sch" 60
-$EndSheet
-$Sheet
-S 3800 3500 2550 1800
-U 5AC78096
-F0 "power" 60
-F1 "power.sch" 60
-$EndSheet
+$Comp
+L Conn_02x20_Odd_Even J?
+U 1 1 5AC78E04
+P 1800 2200
+F 0 "J?" H 1850 3200 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 1850 1100 50  0000 C CNN
+F 2 "" H 1800 2200 50  0001 C CNN
+F 3 "" H 1800 2200 50  0001 C CNN
+	1    1800 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

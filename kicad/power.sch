@@ -49,22 +49,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 1800 1400 2200 1550
-U 5AC7805B
-F0 "interface" 60
-F1 "interface.sch" 60
-$EndSheet
-$Sheet
-S 5100 1400 2200 1550
-U 5AC7807D
-F0 "ethernet" 60
-F1 "ethernet.sch" 60
-$EndSheet
-$Sheet
-S 3800 3500 2550 1800
-U 5AC78096
-F0 "power" 60
-F1 "power.sch" 60
-$EndSheet
 $EndSCHEMATC

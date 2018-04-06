@@ -1,4 +1,4 @@
-update=04.04.2018 16:41:21
+update=06.04.2018 16:51:36
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,5 @@ LibName31=contrib
 LibName32=valves
 LibName33=library/88e1512
 LibName34=library/10cl025
+LibName35=library/l829-1j1t-43
+LibName36=library/nup4114upxv6t1g
