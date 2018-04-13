@@ -31,21 +31,24 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:88e1512
 LIBS:10cl025
 LIBS:l829-1j1t-43
 LIBS:nup4114upxv6t1g
+LIBS:ksz9021rl
+LIBS:ksz9021gn
+LIBS:cfps-73
+LIBS:fpgagigepi-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "figa-pi"
+Date "2018-04-13"
+Rev "1.0"
+Comp "GENERAL RND"
+Comment1 "07e20003"
+Comment2 "Y. Remizov"
 Comment3 ""
 Comment4 ""
 $EndDescr

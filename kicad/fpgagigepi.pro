@@ -1,4 +1,4 @@
-update=06.04.2018 16:51:36
+update=13.04.2018 15:06:24
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,7 +61,9 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=library/88e1512
-LibName34=library/10cl025
-LibName35=library/l829-1j1t-43
-LibName36=library/nup4114upxv6t1g
+LibName33=library/10cl025
+LibName34=library/l829-1j1t-43
+LibName35=library/nup4114upxv6t1g
+LibName36=library/ksz9021rl
+LibName37=library/ksz9021gn
+LibName38=library/cfps-73
