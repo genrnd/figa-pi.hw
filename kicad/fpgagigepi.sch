@@ -37,6 +37,7 @@ LIBS:nup4114upxv6t1g
 LIBS:ksz9021rl
 LIBS:ksz9021gn
 LIBS:cfps-73
+LIBS:tlv62080
 LIBS:fpgagigepi-cache
 EELAYER 25 0
 EELAYER END
@@ -53,7 +54,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1800 1400 2200 1550
+S 1600 1400 2200 1550
 U 5AC7805B
 F0 "interface" 60
 F1 "interface.sch" 60

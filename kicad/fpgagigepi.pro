@@ -1,4 +1,4 @@
-update=13.04.2018 15:06:24
+update=16.04.2018 16:17:31
 version=1
 last_client=kicad
 [pcbnew]
@@ -67,3 +67,4 @@ LibName35=library/nup4114upxv6t1g
 LibName36=library/ksz9021rl
 LibName37=library/ksz9021gn
 LibName38=library/cfps-73
+LibName39=library/tlv62080
