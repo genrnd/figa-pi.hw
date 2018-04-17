@@ -38,6 +38,7 @@ LIBS:ksz9021rl
 LIBS:ksz9021gn
 LIBS:cfps-73
 LIBS:tlv62080
+LIBS:nb3l553
 LIBS:fpgagigepi-cache
 EELAYER 25 0
 EELAYER END

@@ -1,4 +1,4 @@
-update=16.04.2018 16:17:31
+update=17.04.2018 14:21:50
 version=1
 last_client=kicad
 [pcbnew]
@@ -68,3 +68,4 @@ LibName36=library/ksz9021rl
 LibName37=library/ksz9021gn
 LibName38=library/cfps-73
 LibName39=library/tlv62080
+LibName40=library/nb3l553
