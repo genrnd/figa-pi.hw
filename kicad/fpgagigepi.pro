@@ -1,4 +1,4 @@
-update=17.04.2018 14:21:50
+update=24.05.2018 14:10:49
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,3 +69,13 @@ LibName37=library/ksz9021gn
 LibName38=library/cfps-73
 LibName39=library/tlv62080
 LibName40=library/nb3l553
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
