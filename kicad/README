@@ -1,2 +1,23 @@
-Проект FpgaGigePi - дополнительная плата с 1Gbit ethernet для одноплатного компьютера RaspberryPi
-Среда проектирования - Kicad
+Figa-Pi
+=======
+
+Figa-Pi -- expansion board (HAT, hardware attached top) for Raspberry PI with
+FPGA and 1G ethernet port.
+
+Open hardware project, made with Kicad.
+
+Russian desc
+------------
+РџСЂРѕРµРєС‚ Figa-Pi -- РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ РїР»Р°С‚Р° СЃ 1Gbit Ethernet РґР»СЏ РѕРґРЅРѕРїР»Р°С‚РЅРѕРіРѕ
+РєРѕРјРїСЊСЋС‚РµСЂР° Raspberry Pi.
+
+РЎСЂРµРґР° РїСЂРѕРµРєС‚РёСЂРѕРІР°РЅРёСЏ - Kicad.
+
+Author
+------
+
+Jury Remizov <jr@genrnd.ru> 
+General RnD LLC 
+http://genrnd.com/projects/figa-pi
+http://github.com/genrnd/figa-pi
+
