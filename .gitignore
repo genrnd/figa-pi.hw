@@ -1,2 +1,4 @@
 *.bak
 *.bck
+/kicad/fpgagigepi.kicad_pcb-bak
+/kicad/*.bak
