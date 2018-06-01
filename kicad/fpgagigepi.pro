@@ -1,4 +1,4 @@
-update=30-May-18 12:28:09 PM
+update=01.06.2018 19:04:52
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -132,5 +134,3 @@ LibName102=library/my
 LibName103=library/nb3l553
 LibName104=library/nup4114upxv6t1g
 LibName105=library/tlv62080
-[general]
-version=1
