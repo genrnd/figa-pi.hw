@@ -2,3 +2,5 @@
 *.bck
 /kicad/fpgagigepi.kicad_pcb-bak
 /kicad/*.bak
+/kicad/BOM_fpgagigepi.xls
+/kicad/fpgagigepi.csv

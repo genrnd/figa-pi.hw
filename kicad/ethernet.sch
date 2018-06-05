@@ -1,109 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:allegro
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:battery_management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:cmos4000
 LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic_symbols
-LIBS:hc11
-LIBS:infineon
-LIBS:intel
-LIBS:interface
-LIBS:intersil
-LIBS:ir
-LIBS:Lattice
-LIBS:leds
-LIBS:LEM
-LIBS:linear
-LIBS:logic_programmable
-LIBS:maxim
-LIBS:mechanical
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic24mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:motors
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:power
-LIBS:Power_Management
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:RFSolutions
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:triac_thyristor
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:xilinx
-LIBS:zetex
-LIBS:Zilog
-LIBS:10cl025
-LIBS:88e1512
-LIBS:cfps-73
-LIBS:ksz9021gn
-LIBS:ksz9021rl
-LIBS:l829-1j1t-43
-LIBS:my
-LIBS:nb3l553
-LIBS:nup4114upxv6t1g
-LIBS:tlv62080
 LIBS:fpgagigepi-cache
 EELAYER 25 0
 EELAYER END
@@ -120,10 +16,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L L829-1J1T-43 J101
+L L829-1J1T-43 J5
 U 1 1 5AC780DA
 P 9700 2300
-F 0 "J101" H 9200 3150 60  0000 C CNN
+F 0 "J5" H 9200 3150 60  0000 C CNN
 F 1 "L829-1J1T-43" H 9950 3150 60  0000 C CNN
 F 2 "library:L829" H 9700 2600 60  0001 C CNN
 F 3 "" H 9700 2600 60  0001 C CNN
@@ -131,10 +27,10 @@ F 3 "" H 9700 2600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KSZ9021GN U19
+L KSZ9021GN U6
 U 1 1 5AD094DF
 P 5400 3100
-F 0 "U19" H 4850 4750 60  0000 C CNN
+F 0 "U6" H 4850 4750 60  0000 C CNN
 F 1 "KSZ9021GN" H 5750 4750 60  0000 C CNN
 F 2 "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm" H 5150 4000 60  0001 C CNN
 F 3 "" H 5150 4000 60  0001 C CNN
@@ -142,32 +38,32 @@ F 3 "" H 5150 4000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 10cl025 U7
-U 4 1 5AD09564
+L 10cl025 U5
+U 5 1 5AD09564
 P 1550 2100
-F 0 "U7" H 1200 2750 60  0000 C CNN
-F 1 "10CL025ZE144" H 1800 2750 60  0000 C CNN
+F 0 "U5" H 1200 2650 60  0000 C CNN
+F 1 "10CL025ZE144" H 1700 2650 60  0000 C CNN
 F 2 "library:EQFP-144_20x20mm_Pitch0.5mm" H 550 2450 60  0001 C CNN
 F 3 "" H 550 2450 60  0001 C CNN
-	4    1550 2100
+	5    1550 2100
 	-1   0    0    -1  
 $EndComp
 $Comp
-L 10cl025 U7
-U 7 1 5AD095B3
-P 1550 3600
-F 0 "U7" H 1200 4250 60  0000 C CNN
-F 1 "10CL025ZE144" H 1800 4250 60  0000 C CNN
-F 2 "library:EQFP-144_20x20mm_Pitch0.5mm" H 550 3950 60  0001 C CNN
-F 3 "" H 550 3950 60  0001 C CNN
-	7    1550 3600
+L 10cl025 U5
+U 4 1 5AD095B3
+P 1550 3400
+F 0 "U5" H 1200 4050 60  0000 C CNN
+F 1 "10CL025ZE144" H 1800 4050 60  0000 C CNN
+F 2 "library:EQFP-144_20x20mm_Pitch0.5mm" H 550 3750 60  0001 C CNN
+F 3 "" H 550 3750 60  0001 C CNN
+	4    1550 3400
 	-1   0    0    -1  
 $EndComp
 $Comp
-L 10cl025 U7
+L 10cl025 U5
 U 8 1 5AD09652
 P 1550 5000
-F 0 "U7" H 1200 5650 60  0000 C CNN
+F 0 "U5" H 1200 5650 60  0000 C CNN
 F 1 "10CL025ZE144" H 1800 5650 60  0000 C CNN
 F 2 "library:EQFP-144_20x20mm_Pitch0.5mm" H 550 5350 60  0001 C CNN
 F 3 "" H 550 5350 60  0001 C CNN
@@ -215,21 +111,21 @@ Entry Wire Line
 Entry Wire Line
 	6900 2300 7000 2200
 Text Label 6200 1600 0    60   ~ 0
-TXRXP_A
+TXRXA+
 Text Label 6200 1700 0    60   ~ 0
-TXRXM_A
+TXRXA-
 Text Label 6200 1800 0    60   ~ 0
-TXRXP_B
+TXRXB+
 Text Label 6200 1900 0    60   ~ 0
-TXRXM_B
+TXRXB-
 Text Label 6200 2000 0    60   ~ 0
-TXRXP_C
+TXRXC+
 Text Label 6200 2100 0    60   ~ 0
-TXRXM_C
+TXRXC-
 Text Label 6200 2200 0    60   ~ 0
-TXRXP_D
+TXRXD+
 Text Label 6200 2300 0    60   ~ 0
-TXRXM_D
+TXRXD-
 Entry Wire Line
 	8300 1500 8400 1600
 Entry Wire Line
@@ -249,21 +145,21 @@ Entry Wire Line
 Entry Wire Line
 	9300 3700 9400 3800
 Text Label 9400 3800 0    60   ~ 0
-TXRXP_A
+TXRXA+
 Text Label 9400 3900 0    60   ~ 0
-TXRXM_A
+TXRXA-
 Text Label 9400 4000 0    60   ~ 0
-TXRXP_B
+TXRXB+
 Text Label 9400 4100 0    60   ~ 0
-TXRXM_B
+TXRXB-
 Text Label 9400 4700 0    60   ~ 0
-TXRXP_C
+TXRXC+
 Text Label 9400 4800 0    60   ~ 0
-TXRXM_C
+TXRXC-
 Text Label 9400 4900 0    60   ~ 0
-TXRXP_D
+TXRXD+
 Text Label 9400 5000 0    60   ~ 0
-TXRXM_D
+TXRXD-
 NoConn ~ 10700 3800
 NoConn ~ 10700 4700
 Entry Wire Line
@@ -281,21 +177,21 @@ Entry Wire Line
 Entry Wire Line
 	8300 2900 8400 3000
 Text Label 8450 1600 0    60   ~ 0
-TXRXP_A
+TXRXA+
 Text Label 8450 1800 0    60   ~ 0
-TXRXM_A
+TXRXA-
 Text Label 8450 2000 0    60   ~ 0
-TXRXP_B
+TXRXB+
 Text Label 8450 2200 0    60   ~ 0
-TXRXM_B
+TXRXB-
 Text Label 8450 2400 0    60   ~ 0
-TXRXP_C
+TXRXC+
 Text Label 8450 2600 0    60   ~ 0
-TXRXM_C
+TXRXC-
 Text Label 8450 2800 0    60   ~ 0
-TXRXP_D
+TXRXD+
 Text Label 8450 3000 0    60   ~ 0
-TXRXM_D
+TXRXD-
 Entry Wire Line
 	8300 1600 8400 1700
 Entry Wire Line
@@ -384,10 +280,10 @@ TACT3
 Text Label 7900 2300 0    60   ~ 0
 TACT4
 $Comp
-L R R23
+L R R24
 U 1 1 5AD47AF0
 P 4500 5150
-F 0 "R23" H 4650 5200 50  0000 C CNN
+F 0 "R24" H 4650 5200 50  0000 C CNN
 F 1 "4.99k 1%" H 4750 5100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4430 5150 50  0001 C CNN
 F 3 "" H 4500 5150 50  0001 C CNN
@@ -505,10 +401,10 @@ F 3 "" H 3050 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R15
+L R R16
 U 1 1 5AD61895
 P 3050 5350
-F 0 "R15" H 3200 5400 50  0000 C CNN
+F 0 "R16" H 3200 5400 50  0000 C CNN
 F 1 "10k" H 3200 5300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2980 5350 50  0001 C CNN
 F 3 "" H 3050 5350 50  0001 C CNN
@@ -903,10 +799,10 @@ MDIO
 Entry Wire Line
 	3900 4300 4000 4200
 $Comp
-L R R20
+L R R21
 U 1 1 5AD7017F
 P 3450 4300
-F 0 "R20" V 3400 4300 50  0000 C BNN
+F 0 "R21" V 3400 4300 50  0000 C BNN
 F 1 "4.99k 1%" V 3500 4300 50  0000 C TNN
 F 2 "Resistors_SMD:R_0603" V 3380 4300 50  0001 C CNN
 F 3 "" H 3450 4300 50  0001 C CNN
@@ -945,9 +841,9 @@ Entry Wire Line
 Entry Wire Line
 	2700 2500 2800 2400
 Entry Wire Line
-	2700 2600 2800 2500
+	2700 2900 2800 2800
 Entry Wire Line
-	2700 2700 2800 2600
+	2700 3000 2800 2900
 Entry Wire Line
 	2700 3100 2800 3000
 Entry Wire Line
@@ -962,10 +858,6 @@ Entry Wire Line
 	2700 3600 2800 3500
 Entry Wire Line
 	2700 3700 2800 3600
-Entry Wire Line
-	2700 3800 2800 3700
-Entry Wire Line
-	2700 3900 2800 3800
 Entry Wire Line
 	2700 4700 2800 4600
 Entry Wire Line
@@ -990,25 +882,17 @@ Text Label 4150 2300 0    60   ~ 0
 TXD6
 Text Label 4150 2400 0    60   ~ 0
 TXD7
-Text Label 2300 1800 0    60   ~ 0
-TXD0
-Text Label 2300 1900 0    60   ~ 0
-TXD1
-Text Label 2300 2000 0    60   ~ 0
-TXD2
-Text Label 2300 2100 0    60   ~ 0
-TXD3
-Text Label 2300 2200 0    60   ~ 0
-TXD4
 Text Label 2300 2300 0    60   ~ 0
+TXD4
+Text Label 2300 2200 0    60   ~ 0
 TXD5
-Text Label 2300 2400 0    60   ~ 0
+Text Label 2300 2100 0    60   ~ 0
 TXD6
-Text Label 2300 2500 0    60   ~ 0
+Text Label 2300 2000 0    60   ~ 0
 TXD7
-Text Label 2300 2600 0    60   ~ 0
+Text Label 2300 2400 0    60   ~ 0
 TX_CLK
-Text Label 2300 2700 0    60   ~ 0
+Text Label 2300 2500 0    60   ~ 0
 GTX_CLK
 Text Label 4150 2500 0    60   ~ 0
 GTX_CLK
@@ -1018,9 +902,9 @@ Text Label 4150 2600 0    60   ~ 0
 TX_ER
 Text Label 4150 2700 0    60   ~ 0
 TX_EN
-Text Label 2300 4700 0    60   ~ 0
+Text Label 2300 1900 0    60   ~ 0
 TX_ER
-Text Label 2300 4800 0    60   ~ 0
+Text Label 2300 1800 0    60   ~ 0
 TX_EN
 Text Label 4150 2800 0    60   ~ 0
 RXD0
@@ -1048,23 +932,23 @@ Text Label 2300 4900 0    60   ~ 0
 RX_DV
 Text Label 2300 5000 0    60   ~ 0
 RX_ER
-Text Label 2300 3100 0    60   ~ 0
-RXD0
-Text Label 2300 3200 0    60   ~ 0
-RXD1
-Text Label 2300 3300 0    60   ~ 0
-RXD2
 Text Label 2300 3400 0    60   ~ 0
-RXD3
+RXD0
 Text Label 2300 3500 0    60   ~ 0
-RXD4
+RXD1
 Text Label 2300 3600 0    60   ~ 0
-RXD5
+RXD2
 Text Label 2300 3700 0    60   ~ 0
-RXD6
+RXD3
 Text Label 2300 3800 0    60   ~ 0
-RXD7
+RXD4
+Text Label 2300 4000 0    60   ~ 0
+RXD5
 Text Label 2300 3900 0    60   ~ 0
+RXD6
+Text Label 2300 1700 0    60   ~ 0
+RXD7
+Text Label 2300 3000 0    60   ~ 0
 RX_CLK
 $Comp
 L GND #PWR042
@@ -1078,10 +962,10 @@ F 3 "" H 2450 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NUP4114UPXV6T1G U4
+L NUP4114UPXV6T1G U7
 U 1 1 5AD7FAC5
 P 10250 3950
-F 0 "U4" H 10050 4250 60  0000 C CNN
+F 0 "U7" H 10050 4250 60  0000 C CNN
 F 1 "NUP4114UPXV6T1G" H 10250 3650 60  0000 C CNN
 F 2 "library:SOT-563-6" H 10250 3900 60  0001 C CNN
 F 3 "" H 10250 3900 60  0001 C CNN
@@ -1095,10 +979,10 @@ CLK_125M
 Text GLabel 4600 4400 0    60   Input ~ 0
 INT_N
 $Comp
-L R R21
+L R R22
 U 1 1 5ADA76A0
 P 4450 6100
-F 0 "R21" V 4350 6100 50  0000 C CNN
+F 0 "R22" V 4350 6100 50  0000 C CNN
 F 1 "4.99k 1%" V 4550 6100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4380 6100 50  0001 C CNN
 F 3 "" H 4450 6100 50  0001 C CNN
@@ -1112,10 +996,10 @@ DVDDH
 Text GLabel 4100 6100 0    60   Input ~ 0
 DVDDH
 $Comp
-L R R27
+L R R28
 U 1 1 5ADB24BD
 P 10600 1950
-F 0 "R27" H 10650 2000 50  0000 L CNN
+F 0 "R28" H 10650 2000 50  0000 L CNN
 F 1 "220R" H 10650 1900 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603" V 10530 1950 50  0001 C CNN
 F 3 "" H 10600 1950 50  0001 C CNN
@@ -1123,10 +1007,10 @@ F 3 "" H 10600 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R28
+L R R29
 U 1 1 5ADB25B7
 P 10600 2550
-F 0 "R28" H 10650 2600 50  0000 L CNN
+F 0 "R29" H 10650 2600 50  0000 L CNN
 F 1 "220R" H 10650 2500 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603" V 10530 2550 50  0001 C CNN
 F 3 "" H 10600 2550 50  0001 C CNN
@@ -1144,10 +1028,10 @@ Entry Wire Line
 Entry Wire Line
 	3900 3200 4000 3100
 $Comp
-L R R16
+L R R17
 U 1 1 5ADB4846
 P 3450 2600
-F 0 "R16" V 3350 2600 50  0000 C CNN
+F 0 "R17" V 3350 2600 50  0000 C CNN
 F 1 "10k" V 3450 2600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3380 2600 50  0001 C CNN
 F 3 "" H 3450 2600 50  0001 C CNN
@@ -1155,10 +1039,10 @@ F 3 "" H 3450 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R17
+L R R18
 U 1 1 5ADB48C3
 P 3450 2800
-F 0 "R17" V 3350 2800 50  0000 C CNN
+F 0 "R18" V 3350 2800 50  0000 C CNN
 F 1 "1k" V 3450 2800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3380 2800 50  0001 C CNN
 F 3 "" H 3450 2800 50  0001 C CNN
@@ -1166,10 +1050,10 @@ F 3 "" H 3450 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R18
+L R R19
 U 1 1 5ADB4944
 P 3450 3000
-F 0 "R18" V 3350 3000 50  0000 C CNN
+F 0 "R19" V 3350 3000 50  0000 C CNN
 F 1 "1k" V 3450 3000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3380 3000 50  0001 C CNN
 F 3 "" H 3450 3000 50  0001 C CNN
@@ -1177,10 +1061,10 @@ F 3 "" H 3450 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R19
+L R R20
 U 1 1 5ADB49D1
 P 3450 3200
-F 0 "R19" V 3350 3200 50  0000 C CNN
+F 0 "R20" V 3350 3200 50  0000 C CNN
 F 1 "1k" V 3450 3200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3380 3200 50  0001 C CNN
 F 3 "" H 3450 3200 50  0001 C CNN
@@ -1302,7 +1186,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 4700 4600 4700
 Wire Bus Line
-	2800 1400 2800 5400
+	2800 550  2800 5400
 Wire Bus Line
 	4000 1400 4000 4500
 Wire Bus Line
@@ -1625,14 +1509,6 @@ Wire Wire Line
 Wire Wire Line
 	2200 1050 2400 1050
 Wire Wire Line
-	2400 1050 2400 1700
-Wire Wire Line
-	2400 1700 2200 1700
-Wire Wire Line
-	2300 1250 2300 1600
-Wire Wire Line
-	2300 1600 2200 1600
-Wire Wire Line
 	2700 4700 2200 4700
 Wire Wire Line
 	2200 4800 2700 4800
@@ -1641,27 +1517,23 @@ Wire Wire Line
 Wire Wire Line
 	2200 5000 2700 5000
 Wire Wire Line
+	2200 2900 2700 2900
+Wire Wire Line
+	2700 3000 2200 3000
+Wire Wire Line
 	2200 3100 2700 3100
 Wire Wire Line
 	2700 3200 2200 3200
 Wire Wire Line
 	2200 3300 2700 3300
 Wire Wire Line
-	2700 3400 2200 3400
+	2200 3400 2700 3400
 Wire Wire Line
-	2200 3500 2700 3500
+	2700 3500 2200 3500
 Wire Wire Line
 	2200 3600 2700 3600
 Wire Wire Line
 	2700 3700 2200 3700
-Wire Wire Line
-	2200 3800 2700 3800
-Wire Wire Line
-	2700 3900 2200 3900
-Wire Wire Line
-	2200 1800 2700 1800
-Wire Wire Line
-	2200 1900 2700 1900
 Wire Wire Line
 	2700 2000 2200 2000
 Wire Wire Line
@@ -1675,18 +1547,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 2500 2200 2500
 Wire Wire Line
-	2200 2600 2700 2600
-Wire Wire Line
-	2700 2700 2200 2700
-Wire Wire Line
 	2300 4600 2200 4600
-Wire Wire Line
-	2300 4000 2300 4600
-Wire Wire Line
-	2300 4000 2200 4000
-Wire Wire Line
-	2200 4100 2300 4100
-Connection ~ 2300 4100
 Wire Wire Line
 	2200 4500 2300 4500
 Connection ~ 2300 4500
@@ -1694,7 +1555,6 @@ Wire Wire Line
 	2300 4300 2450 4300
 Wire Wire Line
 	2450 4300 2450 4400
-Connection ~ 2300 4300
 Wire Wire Line
 	2200 1250 2300 1250
 Wire Wire Line
@@ -1748,10 +1608,10 @@ RXD3
 Text Notes 3950 3600 2    60   ~ 0
 0001 - GMII/MII Mode
 $Comp
-L R R22
+L R R23
 U 1 1 5ADB73EE
 P 4450 6450
-F 0 "R22" V 4350 6450 50  0000 C CNN
+F 0 "R23" V 4350 6450 50  0000 C CNN
 F 1 "10k" V 4450 6450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4380 6450 50  0001 C CNN
 F 3 "" H 4450 6450 50  0001 C CNN
@@ -1768,10 +1628,10 @@ Connection ~ 4200 6100
 Text Notes 6150 6300 2    60   ~ 0
 Single LED Mode
 $Comp
-L R R26
+L R R27
 U 1 1 5ADB8AF1
 P 4550 1300
-F 0 "R26" V 4450 1300 50  0000 C CNN
+F 0 "R27" V 4450 1300 50  0000 C CNN
 F 1 "10k" V 4550 1300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4480 1300 50  0001 C CNN
 F 3 "" H 4550 1300 50  0001 C CNN
@@ -1779,10 +1639,10 @@ F 3 "" H 4550 1300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R25
+L R R26
 U 1 1 5ADB8B8A
 P 4550 1100
-F 0 "R25" V 4450 1100 50  0000 C CNN
+F 0 "R26" V 4450 1100 50  0000 C CNN
 F 1 "10k" V 4550 1100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4480 1100 50  0001 C CNN
 F 3 "" H 4550 1100 50  0001 C CNN
@@ -1790,10 +1650,10 @@ F 3 "" H 4550 1100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R24
+L R R25
 U 1 1 5ADB8C07
 P 4550 900
-F 0 "R24" V 4450 900 50  0000 C CNN
+F 0 "R25" V 4450 900 50  0000 C CNN
 F 1 "10k" V 4550 900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4480 900 50  0001 C CNN
 F 3 "" H 4550 900 50  0001 C CNN
@@ -1849,10 +1709,10 @@ F 3 "" H 10800 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NUP4114UPXV6T1G U5
+L NUP4114UPXV6T1G U8
 U 1 1 5AD7FB4A
 P 10250 4850
-F 0 "U5" H 10050 5150 60  0000 C CNN
+F 0 "U8" H 10050 5150 60  0000 C CNN
 F 1 "NUP4114UPXV6T1G" H 10250 4550 60  0000 C CNN
 F 2 "library:SOT-563-6" H 10250 4800 60  0001 C CNN
 F 3 "" H 10250 4800 60  0001 C CNN
@@ -1869,4 +1729,50 @@ Wire Wire Line
 	10800 4100 10700 4100
 Wire Wire Line
 	4200 6450 4300 6450
+Wire Wire Line
+	2200 1900 2700 1900
+Wire Wire Line
+	2200 1800 2700 1800
+Text GLabel 2550 600  0    60   Input ~ 0
+TXD0
+Text GLabel 2550 700  0    60   Input ~ 0
+TXD1
+Text GLabel 2550 800  0    60   Input ~ 0
+TXD2
+Text GLabel 2550 900  0    60   Input ~ 0
+TXD3
+Wire Wire Line
+	2550 700  2700 700 
+Entry Wire Line
+	2700 600  2800 700 
+Entry Wire Line
+	2700 700  2800 800 
+Entry Wire Line
+	2700 800  2800 900 
+Entry Wire Line
+	2700 900  2800 1000
+Wire Wire Line
+	2700 900  2550 900 
+Wire Wire Line
+	2550 800  2700 800 
+Wire Wire Line
+	2700 600  2550 600 
+Entry Wire Line
+	2700 1700 2800 1600
+Wire Wire Line
+	2700 1700 2200 1700
+Wire Wire Line
+	2300 4300 2300 4600
+Entry Wire Line
+	2700 3800 2800 3700
+Entry Wire Line
+	2700 3900 2800 3800
+Entry Wire Line
+	2700 4000 2800 3900
+Wire Wire Line
+	2200 3800 2700 3800
+Wire Wire Line
+	2200 3900 2700 3900
+Wire Wire Line
+	2200 4000 2700 4000
 $EndSCHEMATC

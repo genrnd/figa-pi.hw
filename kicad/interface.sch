@@ -1,109 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:allegro
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:battery_management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:cmos4000
 LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic_symbols
-LIBS:hc11
-LIBS:infineon
-LIBS:intel
-LIBS:interface
-LIBS:intersil
-LIBS:ir
-LIBS:Lattice
-LIBS:leds
-LIBS:LEM
-LIBS:linear
-LIBS:logic_programmable
-LIBS:maxim
-LIBS:mechanical
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic24mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:motors
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:power
-LIBS:Power_Management
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:RFSolutions
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:triac_thyristor
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:xilinx
-LIBS:zetex
-LIBS:Zilog
-LIBS:10cl025
-LIBS:88e1512
-LIBS:cfps-73
-LIBS:ksz9021gn
-LIBS:ksz9021rl
-LIBS:l829-1j1t-43
-LIBS:my
-LIBS:nb3l553
-LIBS:nup4114upxv6t1g
-LIBS:tlv62080
 LIBS:fpgagigepi-cache
 EELAYER 25 0
 EELAYER END
@@ -120,10 +16,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 10cl025 U7
+L 10cl025 U5
 U 1 1 5AD09E19
 P 10450 2000
-F 0 "U7" H 10100 2950 60  0000 C CNN
+F 0 "U5" H 10100 2950 60  0000 C CNN
 F 1 "10CL025ZE144" H 10650 2950 60  0000 C CNN
 F 2 "library:EQFP-144_20x20mm_Pitch0.5mm" H 9450 2350 60  0001 C CNN
 F 3 "" H 9450 2350 60  0001 C CNN
@@ -132,10 +28,10 @@ F 4 "CL" H 10450 2000 60  0001 C CNN "PartNumber"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 10cl025 U7
+L 10cl025 U5
 U 2 1 5AD09EC2
 P 6450 5800
-F 0 "U7" H 6100 6250 60  0000 C CNN
+F 0 "U5" H 6100 6250 60  0000 C CNN
 F 1 "10CL025ZE144" H 6700 6250 60  0000 C CNN
 F 2 "library:EQFP-144_20x20mm_Pitch0.5mm" H 5450 6150 60  0001 C CNN
 F 3 "" H 5450 6150 60  0001 C CNN
@@ -143,10 +39,10 @@ F 3 "" H 5450 6150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 10cl025 U7
+L 10cl025 U5
 U 3 1 5AD09F07
 P 10450 5600
-F 0 "U7" H 10100 6150 60  0000 C CNN
+F 0 "U5" H 10100 6150 60  0000 C CNN
 F 1 "10CL025ZE144" H 10700 6150 60  0000 C CNN
 F 2 "library:EQFP-144_20x20mm_Pitch0.5mm" H 9450 5950 60  0001 C CNN
 F 3 "" H 9450 5950 60  0001 C CNN
@@ -154,25 +50,14 @@ F 3 "" H 9450 5950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 10cl025 U7
-U 5 1 5AD09F80
+L 10cl025 U5
+U 7 1 5AD09F80
 P 6450 4500
-F 0 "U7" H 6100 5050 60  0000 C CNN
+F 0 "U5" H 6100 5200 60  0000 C CNN
 F 1 "10CL025ZE144" H 6700 5050 60  0000 C CNN
 F 2 "library:EQFP-144_20x20mm_Pitch0.5mm" H 5450 4850 60  0001 C CNN
 F 3 "" H 5450 4850 60  0001 C CNN
-	5    6450 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L 10cl025 U7
-U 6 1 5AD09FE7
-P 10450 4000
-F 0 "U7" H 10100 4750 60  0000 C CNN
-F 1 "10CL025ZE144" H 10700 4750 60  0000 C CNN
-F 2 "library:EQFP-144_20x20mm_Pitch0.5mm" H 9450 4350 60  0001 C CNN
-F 3 "" H 9450 4350 60  0001 C CNN
-	6    10450 4000
+	7    6450 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -234,10 +119,10 @@ F 3 "" H 1300 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
+L R R11
 U 1 1 5AD4AE48
 P 2300 1100
-F 0 "R10" V 2250 1100 50  0000 C BNN
+F 0 "R11" V 2250 1100 50  0000 C BNN
 F 1 "3.9k" V 2300 1100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2230 1100 50  0001 C CNN
 F 3 "" H 2300 1100 50  0001 C CNN
@@ -245,10 +130,10 @@ F 3 "" H 2300 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R11
+L R R12
 U 1 1 5AD4AEB7
 P 2500 1100
-F 0 "R11" V 2450 1100 50  0000 C BNN
+F 0 "R12" V 2450 1100 50  0000 C BNN
 F 1 "3.9k" V 2500 1100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2430 1100 50  0001 C CNN
 F 3 "" H 2500 1100 50  0001 C CNN
@@ -256,10 +141,10 @@ F 3 "" H 2500 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R12
+L R R13
 U 1 1 5AD4AF04
 P 2700 1100
-F 0 "R12" V 2650 1100 50  0000 C BNN
+F 0 "R13" V 2650 1100 50  0000 C BNN
 F 1 "1k" V 2700 1100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2630 1100 50  0001 C CNN
 F 3 "" H 2700 1100 50  0001 C CNN
@@ -334,10 +219,10 @@ F 3 "" H 1500 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R8
+L R R9
 U 1 1 5AD4E650
 P 1700 2700
-F 0 "R8" V 1650 2700 50  0000 C BNN
+F 0 "R9" V 1650 2700 50  0000 C BNN
 F 1 "10k" V 1700 2700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1630 2700 50  0001 C CNN
 F 3 "" H 1700 2700 50  0001 C CNN
@@ -345,10 +230,10 @@ F 3 "" H 1700 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R9
+L R R10
 U 1 1 5AD4E76B
 P 2150 4550
-F 0 "R9" V 2100 4550 50  0000 C BNN
+F 0 "R10" V 2100 4550 50  0000 C BNN
 F 1 "1k" V 2150 4550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2080 4550 50  0001 C CNN
 F 3 "" H 2150 4550 50  0001 C CNN
@@ -603,10 +488,10 @@ USER_LED0
 Text GLabel 9300 1700 0    60   Input ~ 0
 USER_LED1
 $Comp
-L NUP4114UPXV6T1G U2
+L NUP4114UPXV6T1G U3
 U 1 1 5AD80184
 P 2450 4000
-F 0 "U2" H 2250 4300 60  0000 C CNN
+F 0 "U3" H 2250 4300 60  0000 C CNN
 F 1 "NUP4114UPXV6T1G" H 2450 3700 60  0000 C CNN
 F 2 "library:SOT-563-6" H 2450 3950 60  0001 C CNN
 F 3 "" H 2450 3950 60  0001 C CNN
@@ -614,10 +499,10 @@ F 3 "" H 2450 3950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NB3L553 U3
+L NB3L553 U4
 U 1 1 5AD801F3
 P 3800 6950
-F 0 "U3" H 3650 7300 60  0000 C CNN
+F 0 "U4" H 3650 7300 60  0000 C CNN
 F 1 "NB3L553MNR" H 4200 6550 60  0000 C CNN
 F 2 "Housings_DFN_QFN:DFN-8-1EP_2x2mm_Pitch0.5mm" H 3800 6950 60  0001 C CNN
 F 3 "" H 3800 6950 60  0001 C CNN
@@ -655,10 +540,10 @@ F 3 "" H 9250 950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R13
+L R R15
 U 1 1 5AD81C66
 P 9450 950
-F 0 "R13" V 9350 950 50  0000 C CNN
+F 0 "R15" V 9350 950 50  0000 C CNN
 F 1 "10k" V 9450 950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 9380 950 50  0001 C CNN
 F 3 "" H 9450 950 50  0001 C CNN
@@ -758,7 +643,7 @@ F 3 "" H 9500 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 8300 3850 0    60   ~ 0
-0,0,0 - PS, standart
+0,0,0 - PS, standart\nADD RESISTOR\n
 Text GLabel 6900 2800 2    60   Input ~ 0
 PI_GPIO16/SPI1_CS0
 Text GLabel 6900 3000 2    60   Input ~ 0
@@ -925,12 +810,9 @@ Text GLabel 7200 2300 2    60   Input ~ 0
 IO_87
 Text GLabel 7200 2600 2    60   Input ~ 0
 IO_98
-Text GLabel 9300 4000 0    60   Input ~ 0
+Text GLabel 8050 2300 0    60   Input ~ 0
 IO_98
-NoConn ~ 9800 4200
-NoConn ~ 9800 4300
-NoConn ~ 9800 4400
-Text GLabel 9300 4100 0    60   Input ~ 0
+Text GLabel 8050 2400 0    60   Input ~ 0
 IO_99
 Text GLabel 5300 2100 0    60   Input ~ 0
 IO_99
@@ -982,9 +864,9 @@ F 3 "" H 1850 5900 50  0001 C CNN
 	1    1850 5900
 	-1   0    0    1   
 $EndComp
-Text GLabel 9300 4500 0    60   Input ~ 0
+Text GLabel 3800 5350 0    60   Input ~ 0
 USER_LED2
-Text GLabel 9300 4600 0    60   Input ~ 0
+Text GLabel 3800 5450 0    60   Input ~ 0
 USER_LED3
 $Comp
 L OX40HAT J3
@@ -1013,10 +895,10 @@ F 3 "" H 2100 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ASE-xxxMHz U10
+L ASE-xxxMHz U2
 U 1 1 5B11DC0F
 P 2100 7050
-F 0 "U10" H 1900 7300 50  0000 L CNN
+F 0 "U2" H 1900 7300 50  0000 L CNN
 F 1 "ASEMB-25.000MHZ-LC-T" H 2150 6800 50  0000 L CNN
 F 2 "Oscillators:Oscillator_SMD_Abracon_ASE-4pin_3.2x2.5mm" H 2800 6700 50  0001 C CNN
 F 3 "" H 2000 7050 50  0001 C CNN
@@ -1024,10 +906,10 @@ F 3 "" H 2000 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R29
+L R R8
 U 1 1 5B11FA29
 P 1550 7050
-F 0 "R29" V 1450 7050 50  0000 C CNN
+F 0 "R8" V 1450 7050 50  0000 C CNN
 F 1 "1k" V 1550 7050 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1480 7050 50  0001 C CNN
 F 3 "" H 1550 7050 50  0001 C CNN
@@ -1346,9 +1228,7 @@ Connection ~ 9650 3800
 Wire Wire Line
 	6700 2800 6900 2800
 Wire Wire Line
-	5800 4800 5650 4800
-Wire Wire Line
-	5650 4800 5650 5600
+	5650 4900 5650 5600
 Wire Wire Line
 	5650 5600 5800 5600
 Wire Wire Line
@@ -1438,10 +1318,6 @@ Wire Wire Line
 Wire Wire Line
 	5800 4100 5600 4100
 Wire Wire Line
-	9800 4000 9300 4000
-Wire Wire Line
-	9300 4100 9800 4100
-Wire Wire Line
 	2400 5700 2000 5700
 Wire Wire Line
 	2000 5900 2400 5900
@@ -1457,10 +1333,6 @@ Connection ~ 1100 5700
 Wire Wire Line
 	1100 5900 1200 5900
 Connection ~ 1100 5900
-Wire Wire Line
-	9300 4500 9800 4500
-Wire Wire Line
-	9800 4600 9300 4600
 Wire Wire Line
 	3250 7550 3800 7550
 Wire Wire Line
@@ -1478,4 +1350,34 @@ Wire Wire Line
 	1700 7050 1800 7050
 Wire Wire Line
 	2700 850  2700 950 
+$Comp
+L 10cl025 U5
+U 6 1 5AD09FE7
+P 10450 4000
+F 0 "U5" H 10100 4750 60  0000 C CNN
+F 1 "10CL025ZE144" H 10700 4750 60  0000 C CNN
+F 2 "library:EQFP-144_20x20mm_Pitch0.5mm" H 9450 4350 60  0001 C CNN
+F 3 "" H 9450 4350 60  0001 C CNN
+	6    10450 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 9400 4600 0    60   Input ~ 0
+TXD0
+Text GLabel 9400 4500 0    60   Input ~ 0
+TXD1
+Text GLabel 9400 4400 0    60   Input ~ 0
+TXD2
+Text GLabel 9400 4300 0    60   Input ~ 0
+TXD3
+Wire Wire Line
+	9400 4300 9800 4300
+Wire Wire Line
+	9400 4400 9800 4400
+Wire Wire Line
+	9400 4500 9800 4500
+Wire Wire Line
+	9800 4600 9400 4600
+Wire Wire Line
+	5800 5000 5650 5000
+Connection ~ 5650 5000
 $EndSCHEMATC
