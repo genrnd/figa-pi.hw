@@ -1,4 +1,4 @@
-update=05.06.2018 14:56:39
+update=06.06.2018 15:33:13
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,10 +23,10 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
 [eeschema/libraries]
 LibName1=C:/Program Files/KiCad/share/kicad/library/conn
+[general]
+version=1
