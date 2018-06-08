@@ -1,17 +1,17 @@
 EESchema Schematic File Version 2
-LIBS:conn
+LIBS:power
 LIBS:figa-pi-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 4
-Title "Raspberry Pi HAT"
+Title "Figa-Pi"
 Date ""
-Rev "A"
-Comp ""
-Comment1 ""
-Comment2 ""
+Rev "1.0"
+Comp "GENERAL RnD"
+Comment1 "07e20003"
+Comment2 "I. Pototskiy"
 Comment3 ""
 Comment4 ""
 $EndDescr

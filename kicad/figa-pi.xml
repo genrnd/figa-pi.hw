@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>figa-pi.sch</source>
-    <date>01.06.2018 12:11:31</date>
+    <source>F:/Igor/RD/Local_FigaPI/FigaPI/kicad/figa-pi.sch</source>
+    <date>08/06/2018 19:54:29</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Raspberry Pi HAT</title>
-        <company/>
-        <rev>A</rev>
+        <title>Figa-Pi</title>
+        <company>GENERAL RnD</company>
+        <rev>1.0</rev>
         <date/>
         <source>figa-pi.sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
+        <comment number="1" value="07e20003"/>
+        <comment number="2" value="I. Pototskiy"/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
     <sheet number="2" name="/interface.sch/" tstamps="/5B0D73F1/">
       <title_block>
-        <title>figa-pi</title>
-        <company>GENERAL RND</company>
+        <title>Figa-Pi</title>
+        <company>GENERAL RnD</company>
         <rev>1.0</rev>
         <date>2018-04-13</date>
         <source>interface.sch</source>
         <comment number="1" value="07e20003"/>
-        <comment number="2" value="Y. Remizov"/>
+        <comment number="2" value="I. Pototskiy"/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
     <sheet number="3" name="/ethernet.sch/" tstamps="/5B0D756D/">
       <title_block>
-        <title>figa-pi</title>
-        <company>GENERAL RND</company>
+        <title>Figa-Pi</title>
+        <company>GENERAL RnD</company>
         <rev>1.0</rev>
         <date>2018-04-13</date>
         <source>ethernet.sch</source>
         <comment number="1" value="07e20003"/>
-        <comment number="2" value="Y. Remizov"/>
+        <comment number="2" value="I. Pototskiy"/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
       </title_block>
     </sheet>
     <sheet number="4" name="/power.sch/" tstamps="/5B0DA588/">
       <title_block>
-        <title>figa-pi</title>
-        <company>GENERAL RND</company>
+        <title>Figa-Pi</title>
+        <company>GENERAL RnD</company>
         <rev>1.0</rev>
         <date>2018-04-13</date>
         <source>power.sch</source>
         <comment number="1" value="07e20003"/>
-        <comment number="2" value="Y. Remizov"/>
+        <comment number="2" value="I. Pototskiy"/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
       </title_block>
@@ -90,961 +90,1990 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5834BDED</tstamp>
     </comp>
-    <comp ref="D7">
-      <value>10cl025</value>
+    <comp ref="U5">
+      <value>10CL025ZE144</value>
       <footprint>library:EQFP-144_20x20mm_Pitch0.5mm</footprint>
-      <libsource lib="10cl025" part="10cl025"/>
+      <fields>
+        <field name="MF">Intel</field>
+        <field name="MFPN">10CL025ZE144</field>
+        <field name="CAT">IC</field>
+        <field name="CASE">QFP-144</field>
+        <field name="DESC">FPGA</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="10cl025"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD09E19</tstamp>
     </comp>
     <comp ref="J4">
-      <value>Conn_02x05_Odd_Even</value>
+      <value>PLD-10(DS1021-2x5)</value>
       <footprint>Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="Conn_02x05_Odd_Even"/>
+      <fields>
+        <field name="DESC">CONN TH 2x5pin 2.54mm</field>
+        <field name="MFPN">PLD-10(DS1021-2x5)</field>
+        <field name="MF">Ningbo connfly electronic</field>
+        <field name="CASE">PIN_HEADER_2x5_2.54mm</field>
+        <field name="CAT">CONN</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="Conn_02x05_Odd_Even"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD0A09E</tstamp>
     </comp>
-    <comp ref="U1">
-      <value>24LC32</value>
-      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
-      <libsource lib="memory" part="24LC32"/>
-      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
-      <tstamp>5AD0A4F1</tstamp>
-    </comp>
     <comp ref="J1">
-      <value>Conn_02x05_Odd_Even</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="Conn_02x05_Odd_Even"/>
+      <value>BH-10(IDC-10MS)</value>
+      <footprint>Connectors_IDC:IDC-Header_2x05_Pitch2.54mm_Straight</footprint>
+      <fields>
+        <field name="DESC">SHROUDED CONN TH 2x5pin 2.54mm</field>
+        <field name="CASE">PIN_HEADER_SHR_2x5_2.54mm</field>
+        <field name="CAT">CONN</field>
+        <field name="MF">Ningbo connfly electronic</field>
+        <field name="MFPN">BH-10(IDC-10MS)</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="Conn_02x05_Odd_Even"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD0A849</tstamp>
     </comp>
-    <comp ref="R10">
-      <value>3.9k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+    <comp ref="R11">
+      <value>3.92k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 3.92K OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-073K92L</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD4AE48</tstamp>
     </comp>
-    <comp ref="R11">
-      <value>3.9k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+    <comp ref="R12">
+      <value>3.92k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 3.92K OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-073K92L</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD4AEB7</tstamp>
     </comp>
-    <comp ref="R12">
+    <comp ref="R13">
       <value>1k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 1k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-071KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD4AF04</tstamp>
     </comp>
     <comp ref="C2">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD4AF51</tstamp>
     </comp>
     <comp ref="J2">
-      <value>Conn_01x02</value>
+      <value>PLS-2</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="Conn_01x02"/>
+      <fields>
+        <field name="DESC">CONN TH 1x2pin 2.54mm</field>
+        <field name="MF">Ningbo connfly electronic</field>
+        <field name="MFPN">PLS-2</field>
+        <field name="CAT">CONN</field>
+        <field name="CASE">PIN_HEADER_1x2_2.54mm</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="Conn_01x02"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD4B859</tstamp>
     </comp>
     <comp ref="R7">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 10k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0710KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD4E5E7</tstamp>
     </comp>
-    <comp ref="R8">
+    <comp ref="R9">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 10k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0710KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD4E650</tstamp>
     </comp>
-    <comp ref="R9">
+    <comp ref="R10">
       <value>1k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 1k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-071KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD4E76B</tstamp>
     </comp>
     <comp ref="C1">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD5005A</tstamp>
     </comp>
     <comp ref="C3">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD5DF5F</tstamp>
     </comp>
-    <comp ref="D2">
-      <value>LED</value>
-      <footprint>LEDs:LED_0603_HandSoldering</footprint>
-      <libsource lib="device" part="LED"/>
+    <comp ref="VD2">
+      <value>KP-1608SGC</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <fields>
+        <field name="DESC">SMD LED 0603 GREEN</field>
+        <field name="MF">Kingbright</field>
+        <field name="MFPN">KP-1608SGC</field>
+        <field name="CAT">DIODE</field>
+        <field name="CASE">LED0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="LED"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD71E54</tstamp>
     </comp>
-    <comp ref="D6">
-      <value>LED</value>
-      <footprint>LEDs:LED_0603_HandSoldering</footprint>
-      <libsource lib="device" part="LED"/>
+    <comp ref="VD6">
+      <value>KP-1608SGC</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <fields>
+        <field name="DESC">SMD LED 0603 GREEN</field>
+        <field name="MF">Kingbright</field>
+        <field name="MFPN">KP-1608SGC</field>
+        <field name="CAT">DIODE</field>
+        <field name="CASE">LED0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="LED"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD71F97</tstamp>
     </comp>
-    <comp ref="D3">
-      <value>LED</value>
-      <footprint>LEDs:LED_0603_HandSoldering</footprint>
-      <libsource lib="device" part="LED"/>
+    <comp ref="VD3">
+      <value>KP-1608SRC</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <fields>
+        <field name="DESC">SMD LED 0603 RED</field>
+        <field name="MF">Kingbright</field>
+        <field name="MFPN">KP-1608SRC</field>
+        <field name="CAT">DIODE</field>
+        <field name="CASE">LED0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="LED"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD71FDC</tstamp>
     </comp>
     <comp ref="R2">
-      <value>390</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <value>390R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 390R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-07390RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD72023</tstamp>
     </comp>
     <comp ref="R3">
-      <value>390</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <value>390R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 390R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-07390RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD721EC</tstamp>
     </comp>
     <comp ref="R6">
-      <value>390</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <value>390R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 390R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-07390RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD72239</tstamp>
     </comp>
-    <comp ref="U2">
+    <comp ref="U3">
       <value>NUP4114UPXV6T1G</value>
       <footprint>library:SOT-563-6</footprint>
-      <libsource lib="nup4114upxv6t1g" part="NUP4114UPXV6T1G"/>
+      <fields>
+        <field name="MFPN">NUP4114UPXV6T1G</field>
+        <field name="MF">ON Semiconductor</field>
+        <field name="DESC">TVS DIODE 5.5V 10V SOT563</field>
+        <field name="CAT">DIODE</field>
+        <field name="CASE">SOT-563</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="NUP4114UPXV6T1G"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD80184</tstamp>
     </comp>
-    <comp ref="U3">
-      <value>NB3L553</value>
-      <footprint>Housings_DFN_QFN:DFN-8-1EP_2x2mm_Pitch0.5mm</footprint>
-      <libsource lib="nb3l553" part="NB3L553"/>
-      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
-      <tstamp>5AD801F3</tstamp>
-    </comp>
-    <comp ref="R13">
+    <comp ref="R15">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 10k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0710KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD81C66</tstamp>
     </comp>
     <comp ref="R14">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 10k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0710KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD82001</tstamp>
     </comp>
     <comp ref="R1">
-      <value>390</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <value>390R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 390R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-07390RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD82506</tstamp>
     </comp>
-    <comp ref="D1">
-      <value>LED</value>
-      <footprint>LEDs:LED_0603_HandSoldering</footprint>
-      <libsource lib="device" part="LED"/>
+    <comp ref="VD1">
+      <value>KP-1608SRC</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <fields>
+        <field name="DESC">SMD LED 0603 RED</field>
+        <field name="MF">Kingbright</field>
+        <field name="MFPN">KP-1608SRC</field>
+        <field name="CAT">DIODE</field>
+        <field name="CASE">LED0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="LED"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5AD8258F</tstamp>
     </comp>
     <comp ref="R4">
-      <value>390</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <value>390R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 390R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-07390RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5ADBBFE3</tstamp>
     </comp>
     <comp ref="R5">
-      <value>390</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <value>390R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 390R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-07390RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5ADBC03C</tstamp>
     </comp>
-    <comp ref="D4">
-      <value>LED</value>
-      <footprint>LEDs:LED_0603_HandSoldering</footprint>
-      <libsource lib="device" part="LED"/>
+    <comp ref="VD4">
+      <value>KP-1608SGC</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <fields>
+        <field name="DESC">SMD LED 0603 GREEN</field>
+        <field name="MF">Kingbright</field>
+        <field name="MFPN">KP-1608SGC</field>
+        <field name="CAT">DIODE</field>
+        <field name="CASE">LED0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="LED"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5ADBC197</tstamp>
     </comp>
-    <comp ref="D5">
-      <value>LED</value>
-      <footprint>LEDs:LED_0603_HandSoldering</footprint>
-      <libsource lib="device" part="LED"/>
+    <comp ref="VD5">
+      <value>KP-1608SRC</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <fields>
+        <field name="DESC">SMD LED 0603 RED</field>
+        <field name="MF">Kingbright</field>
+        <field name="MFPN">KP-1608SRC</field>
+        <field name="CAT">DIODE</field>
+        <field name="CASE">LED0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="LED"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5ADBC1FA</tstamp>
     </comp>
-    <comp ref="G1">
-      <value>CFPS-73</value>
-      <footprint>library:CFPS-73</footprint>
-      <libsource lib="cfps-73" part="CFPS-73"/>
-      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
-      <tstamp>5B06B8DD</tstamp>
-    </comp>
     <comp ref="J3">
-      <value>OX40HAT</value>
+      <value>PBD-40(DS1023-2x20)</value>
       <footprint>Socket_Strips:Socket_Strip_Straight_2x20_Pitch2.54mm</footprint>
-      <libsource lib="my" part="OX40HAT"/>
+      <fields>
+        <field name="MF">Ningbo connfly electronic</field>
+        <field name="MFPN">PBD-40(DS1023-2x20)</field>
+        <field name="DESC">CONN SOCKET TH 2x20pin 2.54mm</field>
+        <field name="CAT">CONN</field>
+        <field name="CASE">SOCKET_2x20_2.54mm</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="OX40HAT"/>
       <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
       <tstamp>5B0D754A</tstamp>
     </comp>
-    <comp ref="X1">
+    <comp ref="U2">
+      <value>ASEMB-25.000MHZ-LC-T</value>
+      <footprint>Oscillators:Oscillator_SMD_Abracon_ASE-4pin_3.2x2.5mm</footprint>
+      <fields>
+        <field name="MF">Abracon LLC</field>
+        <field name="MFPN">ASEMB-25.000MHZ-LC-T</field>
+        <field name="CASE">4-SMD, No Lead</field>
+        <field name="CAT">IC</field>
+        <field name="DESC">OSC MEMS 25.000MHZ CMOS SMD</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="ASE-xxxMHz"/>
+      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
+      <tstamp>5B11DC0F</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 1k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-071KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
+      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
+      <tstamp>5B11FA29</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>33R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 33R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0733RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
+      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
+      <tstamp>5B1A8BEA</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>33R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 33R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0733RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
+      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
+      <tstamp>5B1A8FE2</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>33R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 33R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0733RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
+      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
+      <tstamp>5B1A9CBF</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>33R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 33R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0733RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
+      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
+      <tstamp>5B1AA3F4</tstamp>
+    </comp>
+    <comp ref="R40">
+      <value>33R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 33R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0733RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
+      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
+      <tstamp>5B1AA523</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>CDCLVC1102PW</value>
+      <footprint>Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm</footprint>
+      <fields>
+        <field name="MF">Texas Instruments</field>
+        <field name="MFPN">CDCLVC1102PW</field>
+        <field name="CASE">TSSOP-8</field>
+        <field name="CAT">IC</field>
+        <field name="DESC">IC CLK BUFFER 1:2 250MHZ 8TSSOP</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="CDCLVC1102PW"/>
+      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
+      <tstamp>5B1800EB</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>24LC32A/SN</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <fields>
+        <field name="DESC">IC EEPROM 32KBIT 400KHZ 8SOIC</field>
+        <field name="MF">Microchip Technology</field>
+        <field name="MFPN">24LC32A/SN</field>
+        <field name="CAT">IC</field>
+        <field name="CASE">SOIC-8</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="24LC32"/>
+      <sheetpath names="/interface.sch/" tstamps="/5B0D73F1/"/>
+      <tstamp>5B1B1AEF</tstamp>
+    </comp>
+    <comp ref="J5">
       <value>L829-1J1T-43</value>
       <footprint>library:L829</footprint>
-      <libsource lib="l829-1j1t-43" part="L829-1J1T-43"/>
+      <fields>
+        <field name="MFPN">L829-1J1T-43</field>
+        <field name="MF">Bel Fuse Inc</field>
+        <field name="CAT">CONN</field>
+        <field name="CASE">L829_RJ45</field>
+        <field name="DESC">CONN MAGJACK 1PORT 1000 BASE-T</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L829-1J1T-43"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AC780DA</tstamp>
     </comp>
-    <comp ref="D9">
+    <comp ref="U6">
       <value>KSZ9021GN</value>
       <footprint>Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm</footprint>
-      <libsource lib="ksz9021gn" part="KSZ9021GN"/>
+      <fields>
+        <field name="MFPN">KSZ9021GN</field>
+        <field name="MF">Microchip Technology</field>
+        <field name="DESC">IC TXRX ETHERNET 64QFN</field>
+        <field name="CAT">IC</field>
+        <field name="CASE">QFN-64</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="KSZ9021GN"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD094DF</tstamp>
     </comp>
     <comp ref="L6">
-      <value>BLM18PG330</value>
-      <footprint>Inductors_SMD:L_0603_HandSoldering</footprint>
-      <libsource lib="device" part="L"/>
+      <value>BLM18PG330SN1D</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <fields>
+        <field name="DESC">FERRITE BEAD 33 OHM 0603 1LN</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">BLM18PG330SN1D</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD45EF4</tstamp>
     </comp>
     <comp ref="C14">
-      <value>0.1u 16V</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD473C4</tstamp>
     </comp>
     <comp ref="C15">
-      <value>0.1u 16V</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD473FF</tstamp>
     </comp>
     <comp ref="C16">
-      <value>0.1u 16V</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD4742A</tstamp>
     </comp>
     <comp ref="C17">
-      <value>0.1u 16V</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD47457</tstamp>
     </comp>
-    <comp ref="R23">
+    <comp ref="R24">
       <value>4.99k 1%</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 4.99K OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-074K99L</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD47AF0</tstamp>
     </comp>
     <comp ref="C4">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD61842</tstamp>
     </comp>
-    <comp ref="R15">
+    <comp ref="R16">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 10k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0710KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD61895</tstamp>
     </comp>
     <comp ref="C11">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD613B0</tstamp>
     </comp>
     <comp ref="C19">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD613F1</tstamp>
     </comp>
     <comp ref="C23">
-      <value>10u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD61428</tstamp>
     </comp>
     <comp ref="C22">
-      <value>10u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD61461</tstamp>
     </comp>
     <comp ref="C7">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD6180F</tstamp>
     </comp>
     <comp ref="C10">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD6184C</tstamp>
     </comp>
     <comp ref="C18">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD6188B</tstamp>
     </comp>
     <comp ref="L2">
-      <value>BLM18PG330</value>
-      <footprint>Inductors_SMD:L_0603_HandSoldering</footprint>
-      <libsource lib="device" part="L"/>
+      <value>BLM18PG330SN1D</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <fields>
+        <field name="DESC">FERRITE BEAD 33 OHM 0603 1LN</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">BLM18PG330SN1D</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD61D42</tstamp>
     </comp>
     <comp ref="L3">
-      <value>BLM18PG330</value>
-      <footprint>Inductors_SMD:L_0603_HandSoldering</footprint>
-      <libsource lib="device" part="L"/>
+      <value>BLM18PG330SN1D</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <fields>
+        <field name="DESC">FERRITE BEAD 33 OHM 0603 1LN</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">BLM18PG330SN1D</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD61DC1</tstamp>
     </comp>
     <comp ref="C6">
-      <value>10u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD64DA8</tstamp>
     </comp>
     <comp ref="C21">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD64E03</tstamp>
     </comp>
     <comp ref="C25">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD64E4E</tstamp>
     </comp>
     <comp ref="C13">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD64E99</tstamp>
     </comp>
     <comp ref="C26">
-      <value>10u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD64EE6</tstamp>
     </comp>
     <comp ref="C20">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD64F35</tstamp>
     </comp>
     <comp ref="C24">
-      <value>10u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD64F86</tstamp>
     </comp>
     <comp ref="C8">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD64FD9</tstamp>
     </comp>
     <comp ref="C12">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD6502E</tstamp>
     </comp>
     <comp ref="L1">
-      <value>BLM18PG330</value>
-      <footprint>Inductors_SMD:L_0603_HandSoldering</footprint>
-      <libsource lib="device" part="L"/>
+      <value>BLM18PG330SN1D</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <fields>
+        <field name="DESC">FERRITE BEAD 33 OHM 0603 1LN</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">BLM18PG330SN1D</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD65085</tstamp>
     </comp>
     <comp ref="L5">
-      <value>BLM18PG330</value>
-      <footprint>Inductors_SMD:L_0603_HandSoldering</footprint>
-      <libsource lib="device" part="L"/>
+      <value>BLM18PG330SN1D</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <fields>
+        <field name="DESC">FERRITE BEAD 33 OHM 0603 1LN</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">BLM18PG330SN1D</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD65118</tstamp>
     </comp>
     <comp ref="L4">
-      <value>BLM18PG330</value>
-      <footprint>Inductors_SMD:L_0603_HandSoldering</footprint>
-      <libsource lib="device" part="L"/>
+      <value>BLM18PG330SN1D</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <fields>
+        <field name="DESC">FERRITE BEAD 33 OHM 0603 1LN</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">BLM18PG330SN1D</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD65179</tstamp>
     </comp>
     <comp ref="C5">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD69BBC</tstamp>
     </comp>
     <comp ref="C9">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD6A59F</tstamp>
     </comp>
-    <comp ref="R20">
-      <value>4.7k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+    <comp ref="R21">
+      <value>4.99k 1%</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 4.99K OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-074K99L</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5AD7017F</tstamp>
     </comp>
-    <comp ref="U4">
-      <value>NUP4114UPXV6T1G</value>
-      <footprint>library:SOT-563-6</footprint>
-      <libsource lib="nup4114upxv6t1g" part="NUP4114UPXV6T1G"/>
-      <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
-      <tstamp>5AD7FAC5</tstamp>
-    </comp>
-    <comp ref="U5">
-      <value>NUP4114UPXV6T1G</value>
-      <footprint>library:SOT-563-6</footprint>
-      <libsource lib="nup4114upxv6t1g" part="NUP4114UPXV6T1G"/>
-      <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
-      <tstamp>5AD7FB4A</tstamp>
-    </comp>
-    <comp ref="R21">
-      <value>4.7k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+    <comp ref="R22">
+      <value>4.99k 1%</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 4.99K OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-074K99L</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5ADA76A0</tstamp>
     </comp>
-    <comp ref="R27">
-      <value>220</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+    <comp ref="R28">
+      <value>220R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 220R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-07220RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5ADB24BD</tstamp>
     </comp>
-    <comp ref="R28">
-      <value>220</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+    <comp ref="R29">
+      <value>220R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 220R OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-07220RL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5ADB25B7</tstamp>
     </comp>
-    <comp ref="R16">
+    <comp ref="R17">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 10k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0710KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5ADB4846</tstamp>
     </comp>
-    <comp ref="R17">
+    <comp ref="R18">
       <value>1k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 1k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-071KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5ADB48C3</tstamp>
     </comp>
-    <comp ref="R18">
+    <comp ref="R19">
       <value>1k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 1k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-071KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5ADB4944</tstamp>
     </comp>
-    <comp ref="R19">
+    <comp ref="R20">
       <value>1k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 1k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-071KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5ADB49D1</tstamp>
     </comp>
-    <comp ref="R22">
+    <comp ref="R23">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 10k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0710KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5ADB73EE</tstamp>
     </comp>
-    <comp ref="R26">
+    <comp ref="R27">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 10k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0710KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5ADB8AF1</tstamp>
     </comp>
-    <comp ref="R25">
+    <comp ref="R26">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 10k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0710KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5ADB8B8A</tstamp>
     </comp>
-    <comp ref="R24">
+    <comp ref="R25">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 10k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0710KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/ethernet.sch/" tstamps="/5B0D756D/"/>
       <tstamp>5ADB8C07</tstamp>
     </comp>
-    <comp ref="L404">
-      <value>BLM21PG300</value>
-      <footprint>Inductors_SMD:L_0805_HandSoldering</footprint>
-      <libsource lib="device" part="L"/>
+    <comp ref="L11">
+      <value>BLM21PG300SN1D</value>
+      <footprint>Inductors_SMD:L_0805</footprint>
+      <fields>
+        <field name="DESC">FERRITE BEAD 30 OHM 0805 1LN</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">BLM21PG300SN1D</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L0805</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD486AA</tstamp>
     </comp>
-    <comp ref="L405">
-      <value>BLM21PG300</value>
-      <footprint>Inductors_SMD:L_0805_HandSoldering</footprint>
-      <libsource lib="device" part="L"/>
+    <comp ref="L12">
+      <value>BLM21PG300SN1D</value>
+      <footprint>Inductors_SMD:L_0805</footprint>
+      <fields>
+        <field name="DESC">FERRITE BEAD 30 OHM 0805 1LN</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">BLM21PG300SN1D</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L0805</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD486FF</tstamp>
     </comp>
-    <comp ref="L406">
-      <value>BLM21PG300</value>
-      <footprint>Inductors_SMD:L_0805_HandSoldering</footprint>
-      <libsource lib="device" part="L"/>
+    <comp ref="L10">
+      <value>BLM21PG300SN1D</value>
+      <footprint>Inductors_SMD:L_0805</footprint>
+      <fields>
+        <field name="DESC">FERRITE BEAD 30 OHM 0805 1LN</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">BLM21PG300SN1D</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L0805</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD48742</tstamp>
     </comp>
-    <comp ref="J401">
-      <value>Conn_01x01</value>
+    <comp ref="J8">
+      <value>PLS-1</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="Conn_01x01"/>
+      <libsource lib="figa-pi-cache" part="Conn_01x01"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD4885C</tstamp>
     </comp>
-    <comp ref="J402">
-      <value>Conn_01x01</value>
+    <comp ref="J7">
+      <value>PLS-1</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="Conn_01x01"/>
-      <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
-      <tstamp>5AD4888D</tstamp>
-    </comp>
-    <comp ref="J403">
-      <value>Conn_01x01</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="Conn_01x01"/>
+      <libsource lib="figa-pi-cache" part="Conn_01x01"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD488CE</tstamp>
     </comp>
-    <comp ref="D401">
-      <value>TLV62084</value>
+    <comp ref="U10">
+      <value>TLV62084DSGR</value>
       <footprint>library:WSON-8_1EP_2x2mm_Pitch0.5mm</footprint>
-      <libsource lib="tlv62080" part="TLV62084"/>
+      <fields>
+        <field name="MFPN">TLV62084DSGR</field>
+        <field name="MF">Texas Instruments</field>
+        <field name="CAT">IC</field>
+        <field name="DESC">IC REG BUCK ADJ 2A SYNC 8WSON</field>
+        <field name="CASE">WSON-8</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="TLV62084"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD51392</tstamp>
     </comp>
-    <comp ref="C401">
-      <value>10u 16V</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C27">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD52B84</tstamp>
     </comp>
-    <comp ref="C404">
-      <value>22u 6v3</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C31">
+      <value>22uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 22UF 10V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603MRX5R6BB226</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD52BE9</tstamp>
     </comp>
-    <comp ref="R401">
+    <comp ref="R32">
       <value>178k 1%</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 178k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-07178KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD52C36</tstamp>
     </comp>
-    <comp ref="R402">
+    <comp ref="R33">
       <value>28k 1%</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 28k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0728KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD52C79</tstamp>
     </comp>
-    <comp ref="L401">
+    <comp ref="L8">
       <value>LQH3NPN1R0NJ0L</value>
       <footprint>library:L_Vishay_IHLP-1212</footprint>
-      <libsource lib="device" part="L"/>
+      <fields>
+        <field name="DESC">FIXED IND 1UH 1.62A 40 MOHM SMD</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">LQH3NPN1R0NJ0L</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L1212</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD52CB2</tstamp>
     </comp>
-    <comp ref="C402">
-      <value>10u 16V</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C28">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD543E5</tstamp>
     </comp>
-    <comp ref="C405">
-      <value>22u 6v3</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C32">
+      <value>22uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 22UF 10V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603MRX5R6BB226</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD543EB</tstamp>
     </comp>
-    <comp ref="R403">
-      <value>65.3k 1%</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
+    <comp ref="R34">
+      <value>46.4k 1%</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 46.4k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0746K4L</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD543F1</tstamp>
     </comp>
-    <comp ref="R404">
-      <value>39.2k 1%</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
-      <tstamp>5AD543F7</tstamp>
-    </comp>
-    <comp ref="L402">
+    <comp ref="L9">
       <value>LQH3NPN1R0NJ0L</value>
       <footprint>library:L_Vishay_IHLP-1212</footprint>
-      <libsource lib="device" part="L"/>
+      <fields>
+        <field name="DESC">FIXED IND 1UH 1.62A 40 MOHM SMD</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">LQH3NPN1R0NJ0L</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L1212</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD543FD</tstamp>
     </comp>
-    <comp ref="C403">
-      <value>10u 16V</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C29">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD549E5</tstamp>
     </comp>
-    <comp ref="C406">
-      <value>22u 6v3</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C30">
+      <value>22uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 22UF 10V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603MRX5R6BB226</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD549EB</tstamp>
     </comp>
-    <comp ref="R405">
-      <value>178k 1%</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
-      <tstamp>5AD549F1</tstamp>
-    </comp>
-    <comp ref="R406">
-      <value>39.2k 1%</value>
-      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
-      <tstamp>5AD549F7</tstamp>
-    </comp>
-    <comp ref="L403">
+    <comp ref="L7">
       <value>LQH3NPN1R0NJ0L</value>
       <footprint>library:L_Vishay_IHLP-1212</footprint>
-      <libsource lib="device" part="L"/>
+      <fields>
+        <field name="DESC">FIXED IND 1UH 1.62A 40 MOHM SMD</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">LQH3NPN1R0NJ0L</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L1212</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD549FD</tstamp>
     </comp>
-    <comp ref="C426">
-      <value>0.01u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C52">
+      <value>0.01uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10000PF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB103</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5CBD5</tstamp>
     </comp>
-    <comp ref="C422">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C48">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5CC32</tstamp>
     </comp>
-    <comp ref="C418">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C44">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5CC95</tstamp>
     </comp>
-    <comp ref="C414">
-      <value>10u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C40">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5CD14</tstamp>
     </comp>
-    <comp ref="C423">
-      <value>0.01u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C49">
+      <value>0.01uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10000PF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB103</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5D7FA</tstamp>
     </comp>
-    <comp ref="C419">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C45">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5D879</tstamp>
     </comp>
-    <comp ref="C415">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C41">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5D8DE</tstamp>
     </comp>
-    <comp ref="C411">
-      <value>10u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C37">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5D93B</tstamp>
     </comp>
-    <comp ref="L407">
-      <value>BLM18PG330</value>
-      <footprint>Inductors_SMD:L_0603_HandSoldering</footprint>
-      <libsource lib="device" part="L"/>
+    <comp ref="L13">
+      <value>BLM18PG330SN1D</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <fields>
+        <field name="DESC">FERRITE BEAD 33 OHM 0603 1LN</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MFPN">BLM18PG330SN1D</field>
+        <field name="CAT">IND</field>
+        <field name="CASE">L0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="L"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5D998</tstamp>
     </comp>
-    <comp ref="C427">
-      <value>0.01u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C53">
+      <value>0.01uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10000PF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB103</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5F8AC</tstamp>
     </comp>
-    <comp ref="C429">
-      <value>0.01u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C55">
+      <value>0.01uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10000PF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB103</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5F969</tstamp>
     </comp>
-    <comp ref="C431">
-      <value>0.01u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C57">
+      <value>0.01uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10000PF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB103</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5F9D2</tstamp>
     </comp>
-    <comp ref="C433">
-      <value>0.01u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C59">
+      <value>0.01uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10000PF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB103</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5FA39</tstamp>
     </comp>
-    <comp ref="C435">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C61">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5FA9C</tstamp>
     </comp>
-    <comp ref="C437">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C63">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5FB01</tstamp>
     </comp>
-    <comp ref="C428">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C54">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5FB70</tstamp>
     </comp>
-    <comp ref="C430">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C56">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5FBF3</tstamp>
     </comp>
-    <comp ref="C432">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C58">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5FC62</tstamp>
     </comp>
-    <comp ref="C434">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C60">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5FCD1</tstamp>
     </comp>
-    <comp ref="C436">
-      <value>10u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C62">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5FD40</tstamp>
     </comp>
-    <comp ref="C438">
-      <value>10u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C64">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD5FDB1</tstamp>
     </comp>
-    <comp ref="C425">
-      <value>0.01u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C51">
+      <value>0.01uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10000PF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB103</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD63737</tstamp>
     </comp>
-    <comp ref="C421">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C47">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD63808</tstamp>
     </comp>
-    <comp ref="C417">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C43">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD6387F</tstamp>
     </comp>
-    <comp ref="C413">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C39">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD638F8</tstamp>
     </comp>
-    <comp ref="C410">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C36">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD63973</tstamp>
     </comp>
-    <comp ref="C408">
-      <value>10u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C34">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD639F0</tstamp>
     </comp>
-    <comp ref="C424">
-      <value>0.01u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C50">
+      <value>0.01uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10000PF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB103</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD63A6F</tstamp>
     </comp>
-    <comp ref="C420">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C46">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD63AF0</tstamp>
     </comp>
-    <comp ref="C416">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C42">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD63B73</tstamp>
     </comp>
-    <comp ref="C412">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C38">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD63BF8</tstamp>
     </comp>
-    <comp ref="C409">
-      <value>0.1u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C35">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD63C7F</tstamp>
     </comp>
-    <comp ref="C407">
-      <value>10u</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <libsource lib="device" part="C"/>
+    <comp ref="C33">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 10UF 16V X5R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX5R7BB106</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
       <tstamp>5AD63D08</tstamp>
     </comp>
-    <comp ref="D402">
-      <value>TLV62084</value>
-      <footprint>library:WSON-8_1EP_2x2mm_Pitch0.5mm</footprint>
-      <libsource lib="tlv62080" part="TLV62084"/>
+    <comp ref="J6">
+      <value>POE connector</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_2x02_Pitch2.54mm</footprint>
+      <fields>
+        <field name="MF">Ningbo connfly electronic</field>
+        <field name="MFPN">PBD-4 (DS1023-2X2)</field>
+        <field name="CAT">CONN</field>
+        <field name="CASE">SOCKET_2x2_2.54mm</field>
+        <field name="DESC">CONN SOCKET TH 2x2pin 2.54mm</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="Conn_02x02_Odd_Even"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
-      <tstamp>5AD6872C</tstamp>
+      <tstamp>5B1695EB</tstamp>
     </comp>
-    <comp ref="D403">
-      <value>TLV62080</value>
-      <footprint>library:WSON-8_1EP_2x2mm_Pitch0.5mm</footprint>
-      <libsource lib="tlv62080" part="TLV62080"/>
+    <comp ref="C65">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
       <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
-      <tstamp>5AD68DF5</tstamp>
+      <tstamp>5B1A5153</tstamp>
+    </comp>
+    <comp ref="C66">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="DESC">CAP CER 0.1UF 50V X7R 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">CC0603KRX7R9BB104</field>
+        <field name="CAT">CAP</field>
+        <field name="CASE">C0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="C"/>
+      <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
+      <tstamp>5B1A5220</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>PLS-1</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm</footprint>
+      <libsource lib="figa-pi-cache" part="Conn_01x01"/>
+      <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
+      <tstamp>5AD4888D</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>TLV62084DSGR</value>
+      <footprint>library:WSON-8_1EP_2x2mm_Pitch0.5mm</footprint>
+      <fields>
+        <field name="MFPN">TLV62084DSGR</field>
+        <field name="MF">Texas Instruments</field>
+        <field name="CAT">IC</field>
+        <field name="DESC">IC REG BUCK ADJ 2A SYNC 8WSON</field>
+        <field name="CASE">WSON-8</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="TLV62084"/>
+      <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
+      <tstamp>5B1B900E</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>TLV62084DSGR</value>
+      <footprint>library:WSON-8_1EP_2x2mm_Pitch0.5mm</footprint>
+      <fields>
+        <field name="MFPN">TLV62084DSGR</field>
+        <field name="MF">Texas Instruments</field>
+        <field name="CAT">IC</field>
+        <field name="DESC">IC REG BUCK ADJ 2A SYNC 8WSON</field>
+        <field name="CASE">WSON-8</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="TLV62084"/>
+      <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
+      <tstamp>5B1B93C8</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>28k 1%</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 28k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0728KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
+      <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
+      <tstamp>5B1C53C2</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>28k 1%</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 28k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-0728KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
+      <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
+      <tstamp>5B1CB0F8</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>127k 1%</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="DESC">RES SMD 127k OHM 1% 1/10W 0603</field>
+        <field name="MF">Yageo</field>
+        <field name="MFPN">RC0603FR-07127KL</field>
+        <field name="CAT">RES</field>
+        <field name="CASE">R0603</field>
+      </fields>
+      <libsource lib="figa-pi-cache" part="R"/>
+      <sheetpath names="/power.sch/" tstamps="/5B0DA588/"/>
+      <tstamp>5B1CB518</tstamp>
     </comp>
   </components>
   <libparts>
-    <libpart lib="10cl025" part="10cl025">
+    <libpart lib="figa-pi-cache" part="10cl025">
       <fields>
         <field name="Reference">U</field>
         <field name="Value">10cl025</field>
@@ -1197,7 +2226,7 @@
         <pin num="145" name="EXPPAD" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="memory" part="24LC16">
+    <libpart lib="figa-pi-cache" part="24LC16">
       <aliases>
         <alias>24LC00</alias>
         <alias>24LC01</alias>
@@ -1211,8 +2240,6 @@
         <alias>24LC512</alias>
         <alias>24LC1025</alias>
       </aliases>
-      <description>I2C Serial EEPROM, 16kb</description>
-      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/21703d.pdf</docs>
       <footprints>
         <fp>SOIC*</fp>
       </footprints>
@@ -1220,6 +2247,11 @@
         <field name="Reference">U</field>
         <field name="Value">24LC16</field>
         <field name="Footprint">Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</field>
+        <field name="DESC">IC EEPROM 32KBIT 400KHZ 8SOIC</field>
+        <field name="MF">Microchip Technology</field>
+        <field name="MFPN">24LC32A/SN</field>
+        <field name="CAT">IC</field>
+        <field name="CASE">SOIC-8</field>
       </fields>
       <pins>
         <pin num="1" name="A0" type="input"/>
@@ -1232,8 +2264,23 @@
         <pin num="8" name="VCC" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="C">
-      <description>Unpolarized capacitor</description>
+    <libpart lib="figa-pi-cache" part="ASE-xxxMHz">
+      <footprints>
+        <fp>Oscillator*SMD*Abracon*ASE*3.2x2.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">ASE-xxxMHz</field>
+        <field name="Footprint">Oscillators:Oscillator_SMD_Abracon_ASE-4pin_3.2x2.5mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="output"/>
+        <pin num="4" name="Vdd" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="figa-pi-cache" part="C">
       <footprints>
         <fp>C_*</fp>
       </footprints>
@@ -1246,21 +2293,27 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="cfps-73" part="CFPS-73">
+    <libpart lib="figa-pi-cache" part="CDCLVC1102PW">
+      <description>LVCMOS Clock Buffer</description>
+      <footprints>
+        <fp>TSSOP8*</fp>
+      </footprints>
       <fields>
-        <field name="Reference">G</field>
-        <field name="Value">CFPS-73</field>
+        <field name="Reference">U</field>
+        <field name="Value">CDCLVC1102PW</field>
       </fields>
       <pins>
-        <pin num="1" name="STB" type="BiDi"/>
-        <pin num="2" name="GND" type="BiDi"/>
-        <pin num="3" name="OUT" type="BiDi"/>
-        <pin num="4" name="Vdd" type="BiDi"/>
+        <pin num="1" name="CLKIN" type="input"/>
+        <pin num="2" name="1G" type="input"/>
+        <pin num="3" name="Y0" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="NC" type="NotConnected"/>
+        <pin num="6" name="Vdd" type="power_in"/>
+        <pin num="7" name="NC" type="NotConnected"/>
+        <pin num="8" name="Y1" type="output"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="Conn_01x01">
-      <description>Generic connector, single row, 01x01</description>
-      <docs>~</docs>
+    <libpart lib="figa-pi-cache" part="Conn_01x01">
       <footprints>
         <fp>Connector*:*_??x*mm*</fp>
         <fp>Connector*:*1x??x*mm*</fp>
@@ -1277,9 +2330,7 @@
         <pin num="1" name="Pin_1" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="Conn_01x02">
-      <description>Generic connector, single row, 01x02</description>
-      <docs>~</docs>
+    <libpart lib="figa-pi-cache" part="Conn_01x02">
       <footprints>
         <fp>Connector*:*_??x*mm*</fp>
         <fp>Connector*:*1x??x*mm*</fp>
@@ -1297,9 +2348,27 @@
         <pin num="2" name="Pin_2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="Conn_02x05_Odd_Even">
-      <description>Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers)</description>
-      <docs>~</docs>
+    <libpart lib="figa-pi-cache" part="Conn_02x02_Odd_Even">
+      <footprints>
+        <fp>Connector*:*2x??x*mm*</fp>
+        <fp>Connector*:*2x???Pitch*</fp>
+        <fp>Pin_Header_Straight_2X*</fp>
+        <fp>Pin_Header_Angled_2X*</fp>
+        <fp>Socket_Strip_Straight_2X*</fp>
+        <fp>Socket_Strip_Angled_2X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x02_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="figa-pi-cache" part="Conn_02x05_Odd_Even">
       <footprints>
         <fp>Connector*:*2x??x*mm*</fp>
         <fp>Connector*:*2x???Pitch*</fp>
@@ -1325,10 +2394,11 @@
         <pin num="10" name="Pin_10" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="ksz9021gn" part="KSZ9021GN">
+    <libpart lib="figa-pi-cache" part="KSZ9021GN">
       <fields>
         <field name="Reference">U</field>
         <field name="Value">KSZ9021GN</field>
+        <field name="MFPN">KSZ9021GN</field>
       </fields>
       <pins>
         <pin num="1" name="AVDDH" type="BiDi"/>
@@ -1398,8 +2468,7 @@
         <pin num="65" name="EXP_PAD" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="L">
-      <description>Inductor</description>
+    <libpart lib="figa-pi-cache" part="L">
       <footprints>
         <fp>Choke_*</fp>
         <fp>*Coil*</fp>
@@ -1415,7 +2484,7 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="l829-1j1t-43" part="L829-1J1T-43">
+    <libpart lib="figa-pi-cache" part="L829-1J1T-43">
       <fields>
         <field name="Reference">X</field>
         <field name="Value">L829-1J1T-43</field>
@@ -1442,8 +2511,7 @@
         <pin num="19" name="SHLD2" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="LED">
-      <description>LED generic</description>
+    <libpart lib="figa-pi-cache" part="LED">
       <footprints>
         <fp>LED*</fp>
       </footprints>
@@ -1466,24 +2534,7 @@
         <field name="Value">Mechanical:Mounting_Hole</field>
       </fields>
     </libpart>
-    <libpart lib="nb3l553" part="NB3L553">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">NB3L553</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Vdd" type="power_in"/>
-        <pin num="2" name="Q0" type="passive"/>
-        <pin num="3" name="Q1" type="passive"/>
-        <pin num="4" name="GND" type="passive"/>
-        <pin num="5" name="Iclk" type="passive"/>
-        <pin num="6" name="Q2" type="passive"/>
-        <pin num="7" name="Q3" type="passive"/>
-        <pin num="8" name="OE" type="passive"/>
-        <pin num="9" name="EXPPAD" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="nup4114upxv6t1g" part="NUP4114UPXV6T1G">
+    <libpart lib="figa-pi-cache" part="NUP4114UPXV6T1G">
       <fields>
         <field name="Reference">U</field>
         <field name="Value">NUP4114UPXV6T1G</field>
@@ -1497,7 +2548,7 @@
         <pin num="6" name="I/O4" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="my" part="OX40HAT">
+    <libpart lib="figa-pi-cache" part="OX40HAT">
       <fields>
         <field name="Reference">J</field>
         <field name="Value">OX40HAT</field>
@@ -1546,8 +2597,7 @@
         <pin num="40" name="BCM21" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="R">
-      <description>Resistor</description>
+    <libpart lib="figa-pi-cache" part="R">
       <footprints>
         <fp>R_*</fp>
         <fp>R_*</fp>
@@ -1561,24 +2611,7 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="tlv62080" part="TLV62080">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">TLV62080</field>
-      </fields>
-      <pins>
-        <pin num="1" name="EN" type="BiDi"/>
-        <pin num="2" name="GND" type="passive"/>
-        <pin num="3" name="GND" type="passive"/>
-        <pin num="4" name="FB" type="BiDi"/>
-        <pin num="5" name="VOS" type="BiDi"/>
-        <pin num="6" name="PG" type="BiDi"/>
-        <pin num="7" name="SW" type="BiDi"/>
-        <pin num="8" name="VIN" type="power_in"/>
-        <pin num="9" name="EXPPAD" type="BiDi"/>
-      </pins>
-    </libpart>
-    <libpart lib="tlv62080" part="TLV62084">
+    <libpart lib="figa-pi-cache" part="TLV62084">
       <fields>
         <field name="Reference">U</field>
         <field name="Value">TLV62084</field>
@@ -1597,923 +2630,901 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="conn">
-      <uri>conn.lib</uri>
-    </library>
-    <library logical="device">
-      <uri>device.lib</uri>
-    </library>
-    <library logical="memory">
-      <uri>memory.lib</uri>
-    </library>
-    <library logical="10cl025">
-      <uri>library/10cl025.lib</uri>
-    </library>
-    <library logical="cfps-73">
-      <uri>library/cfps-73.lib</uri>
-    </library>
-    <library logical="ksz9021gn">
-      <uri>library/ksz9021gn.lib</uri>
-    </library>
-    <library logical="l829-1j1t-43">
-      <uri>library/l829-1j1t-43.lib</uri>
-    </library>
-    <library logical="my">
-      <uri>library/my.lib</uri>
-    </library>
-    <library logical="nb3l553">
-      <uri>library/nb3l553.lib</uri>
-    </library>
-    <library logical="nup4114upxv6t1g">
-      <uri>library/nup4114upxv6t1g.lib</uri>
-    </library>
-    <library logical="tlv62080">
-      <uri>library/tlv62080.lib</uri>
-    </library>
     <library logical="figa-pi-cache">
-      <uri>figa-pi-cache.lib</uri>
+      <uri>F:\Igor\RD\Local_FigaPI\FigaPI\kicad\figa-pi-cache.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
-      <node ref="D9" pin="9"/>
-      <node ref="D9" pin="64"/>
-      <node ref="D9" pin="65"/>
-      <node ref="R23" pin="2"/>
-      <node ref="C19" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="C23" pin="2"/>
-      <node ref="C22" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="C10" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="D7" pin="126"/>
-      <node ref="D7" pin="127"/>
-      <node ref="D7" pin="128"/>
-      <node ref="D7" pin="129"/>
-      <node ref="L6" pin="2"/>
-      <node ref="C14" pin="2"/>
-      <node ref="C15" pin="2"/>
-      <node ref="C16" pin="2"/>
-      <node ref="C17" pin="2"/>
-      <node ref="C436" pin="2"/>
-      <node ref="C438" pin="2"/>
-      <node ref="C434" pin="2"/>
-      <node ref="C20" pin="2"/>
-      <node ref="C24" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C12" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C18" pin="2"/>
-      <node ref="C26" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="C13" pin="2"/>
-      <node ref="C25" pin="2"/>
-      <node ref="C21" pin="2"/>
-      <node ref="C432" pin="2"/>
-      <node ref="C435" pin="2"/>
-      <node ref="C437" pin="2"/>
-      <node ref="C428" pin="2"/>
-      <node ref="C430" pin="2"/>
-      <node ref="D6" pin="1"/>
-      <node ref="D7" pin="89"/>
-      <node ref="D7" pin="90"/>
-      <node ref="D7" pin="91"/>
-      <node ref="D7" pin="94"/>
-      <node ref="D7" pin="96"/>
-      <node ref="R17" pin="2"/>
-      <node ref="R18" pin="2"/>
-      <node ref="R19" pin="2"/>
-      <node ref="D7" pin="74"/>
-      <node ref="D7" pin="104"/>
-      <node ref="D7" pin="145"/>
-      <node ref="D7" pin="108"/>
-      <node ref="D7" pin="118"/>
-      <node ref="D7" pin="131"/>
-      <node ref="D7" pin="95"/>
-      <node ref="D7" pin="2"/>
-      <node ref="D7" pin="4"/>
-      <node ref="D7" pin="30"/>
-      <node ref="D7" pin="41"/>
-      <node ref="D7" pin="82"/>
-      <node ref="D7" pin="63"/>
-      <node ref="D7" pin="64"/>
-      <node ref="D7" pin="123"/>
-      <node ref="D7" pin="36"/>
-      <node ref="D7" pin="27"/>
-      <node ref="D7" pin="57"/>
-      <node ref="D7" pin="48"/>
-      <node ref="D7" pin="19"/>
-      <node ref="D7" pin="79"/>
-      <node ref="D7" pin="110"/>
-      <node ref="D7" pin="140"/>
-      <node ref="R406" pin="1"/>
-      <node ref="C406" pin="2"/>
-      <node ref="C401" pin="2"/>
-      <node ref="C404" pin="2"/>
-      <node ref="R402" pin="1"/>
-      <node ref="R404" pin="1"/>
-      <node ref="C402" pin="2"/>
-      <node ref="C405" pin="2"/>
-      <node ref="C403" pin="2"/>
-      <node ref="C426" pin="2"/>
-      <node ref="C422" pin="2"/>
-      <node ref="C418" pin="2"/>
-      <node ref="D402" pin="9"/>
-      <node ref="D403" pin="2"/>
-      <node ref="D403" pin="3"/>
-      <node ref="C419" pin="2"/>
-      <node ref="C414" pin="2"/>
-      <node ref="C423" pin="2"/>
-      <node ref="C415" pin="2"/>
-      <node ref="C411" pin="2"/>
-      <node ref="D402" pin="3"/>
-      <node ref="C427" pin="2"/>
-      <node ref="C429" pin="2"/>
-      <node ref="C431" pin="2"/>
-      <node ref="C433" pin="2"/>
-      <node ref="D401" pin="3"/>
-      <node ref="D401" pin="2"/>
-      <node ref="D401" pin="9"/>
-      <node ref="D403" pin="9"/>
-      <node ref="D402" pin="2"/>
-      <node ref="C425" pin="2"/>
-      <node ref="C421" pin="2"/>
-      <node ref="C417" pin="2"/>
-      <node ref="C413" pin="2"/>
-      <node ref="C410" pin="2"/>
-      <node ref="C408" pin="2"/>
-      <node ref="C424" pin="2"/>
-      <node ref="C420" pin="2"/>
-      <node ref="C416" pin="2"/>
-      <node ref="C412" pin="2"/>
-      <node ref="C409" pin="2"/>
-      <node ref="C407" pin="2"/>
-      <node ref="U2" pin="2"/>
-      <node ref="U3" pin="4"/>
-      <node ref="R9" pin="1"/>
-      <node ref="D7" pin="23"/>
-      <node ref="D7" pin="21"/>
-      <node ref="D7" pin="22"/>
-      <node ref="D7" pin="53"/>
-      <node ref="D7" pin="52"/>
-      <node ref="D7" pin="25"/>
-      <node ref="D7" pin="24"/>
-      <node ref="G1" pin="2"/>
-      <node ref="J1" pin="10"/>
-      <node ref="J3" pin="6"/>
-      <node ref="J3" pin="34"/>
-      <node ref="J2" pin="2"/>
-      <node ref="J3" pin="20"/>
-      <node ref="J3" pin="30"/>
-      <node ref="J3" pin="14"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="D7" pin="88"/>
-      <node ref="C1" pin="2"/>
-      <node ref="U3" pin="9"/>
-      <node ref="J1" pin="2"/>
-      <node ref="D7" pin="97"/>
-      <node ref="U1" pin="3"/>
-      <node ref="J4" pin="9"/>
-      <node ref="U1" pin="2"/>
-      <node ref="U1" pin="1"/>
-      <node ref="U1" pin="4"/>
-    </net>
-    <net code="2" name="PI_GPIO16/SPI1_CS0">
-      <node ref="D7" pin="33"/>
-      <node ref="J3" pin="36"/>
-    </net>
-    <net code="3" name="+3V3">
-      <node ref="G1" pin="4"/>
-      <node ref="U1" pin="8"/>
-      <node ref="C417" pin="1"/>
-      <node ref="R10" pin="1"/>
-      <node ref="C425" pin="1"/>
-      <node ref="D7" pin="93"/>
-      <node ref="D7" pin="62"/>
-      <node ref="D7" pin="81"/>
-      <node ref="D7" pin="40"/>
-      <node ref="C421" pin="1"/>
-      <node ref="C413" pin="1"/>
-      <node ref="C410" pin="1"/>
-      <node ref="C408" pin="1"/>
-      <node ref="D7" pin="117"/>
-      <node ref="D7" pin="122"/>
-      <node ref="D7" pin="130"/>
-      <node ref="D7" pin="47"/>
-      <node ref="D7" pin="17"/>
-      <node ref="D7" pin="56"/>
-      <node ref="D7" pin="26"/>
-      <node ref="L404" pin="2"/>
-      <node ref="D7" pin="139"/>
-      <node ref="C407" pin="1"/>
-      <node ref="C420" pin="1"/>
-      <node ref="C416" pin="1"/>
-      <node ref="C412" pin="1"/>
-      <node ref="R13" pin="2"/>
-      <node ref="C409" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="R14" pin="1"/>
-      <node ref="R11" pin="1"/>
-      <node ref="U3" pin="1"/>
-      <node ref="C424" pin="1"/>
-      <node ref="U3" pin="8"/>
-      <node ref="U2" pin="5"/>
-      <node ref="C3" pin="1"/>
-      <node ref="R1" pin="2"/>
-      <node ref="J1" pin="4"/>
-      <node ref="R5" pin="2"/>
-      <node ref="R4" pin="2"/>
-      <node ref="R20" pin="2"/>
-      <node ref="R15" pin="1"/>
-      <node ref="L2" pin="2"/>
-      <node ref="L3" pin="2"/>
-      <node ref="R12" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="R7" pin="1"/>
-      <node ref="R2" pin="2"/>
-      <node ref="R3" pin="2"/>
-      <node ref="R6" pin="2"/>
-      <node ref="R8" pin="1"/>
-    </net>
-    <net code="4" name="Net-(D1-Pad2)">
-      <node ref="D1" pin="2"/>
-      <node ref="R1" pin="1"/>
-    </net>
-    <net code="5" name="Net-(J3-Pad17)">
-      <node ref="J3" pin="17"/>
-    </net>
-    <net code="6" name="+5V">
-      <node ref="C403" pin="1"/>
-      <node ref="D401" pin="8"/>
-      <node ref="D401" pin="1"/>
-      <node ref="D402" pin="8"/>
-      <node ref="C402" pin="1"/>
-      <node ref="D403" pin="1"/>
-      <node ref="J3" pin="4"/>
-      <node ref="J4" pin="1"/>
-      <node ref="J3" pin="2"/>
-      <node ref="D403" pin="8"/>
-      <node ref="D402" pin="1"/>
-      <node ref="C401" pin="1"/>
-    </net>
-    <net code="8" name="USER_LED0">
-      <node ref="D7" pin="10"/>
-      <node ref="D2" pin="1"/>
-    </net>
-    <net code="9" name="USER_LED1">
-      <node ref="D7" pin="11"/>
-      <node ref="D3" pin="1"/>
-    </net>
-    <net code="10" name="JTAG_TDO">
-      <node ref="U2" pin="1"/>
-      <node ref="J1" pin="3"/>
-      <node ref="D7" pin="20"/>
-    </net>
-    <net code="11" name="JTAG_TCK">
-      <node ref="U2" pin="6"/>
-      <node ref="R9" pin="2"/>
-      <node ref="D7" pin="16"/>
-      <node ref="J1" pin="1"/>
-    </net>
-    <net code="12" name="25M_A">
-      <node ref="D7" pin="55"/>
-      <node ref="U3" pin="2"/>
-    </net>
-    <net code="13" name="25M_B">
-      <node ref="U3" pin="3"/>
-      <node ref="D9" pin="61"/>
-    </net>
-    <net code="14" name="Net-(G1-Pad3)">
-      <node ref="G1" pin="3"/>
-      <node ref="U3" pin="5"/>
-    </net>
-    <net code="15" name="Net-(U3-Pad6)">
-      <node ref="U3" pin="6"/>
-    </net>
-    <net code="16" name="Net-(D2-Pad2)">
+    <net code="1" name="Net-(R2-Pad1)">
+      <node ref="VD2" pin="2"/>
       <node ref="R2" pin="1"/>
-      <node ref="D2" pin="2"/>
     </net>
-    <net code="17" name="Net-(D3-Pad2)">
-      <node ref="D3" pin="2"/>
+    <net code="2" name="Net-(R3-Pad1)">
+      <node ref="VD3" pin="2"/>
       <node ref="R3" pin="1"/>
     </net>
-    <net code="18" name="Net-(D6-Pad2)">
+    <net code="3" name="Net-(R6-Pad1)">
+      <node ref="VD6" pin="2"/>
       <node ref="R6" pin="1"/>
-      <node ref="D6" pin="2"/>
     </net>
-    <net code="19" name="Net-(U3-Pad7)">
-      <node ref="U3" pin="7"/>
+    <net code="4" name="USER_LED1">
+      <node ref="VD3" pin="1"/>
+      <node ref="U5" pin="60"/>
     </net>
-    <net code="20" name="USER_LED2">
-      <node ref="D7" pin="105"/>
-      <node ref="D4" pin="1"/>
-    </net>
-    <net code="21" name="USER_LED3">
-      <node ref="D5" pin="1"/>
-      <node ref="D7" pin="106"/>
-    </net>
-    <net code="22" name="Net-(G1-Pad1)">
-      <node ref="G1" pin="1"/>
-    </net>
-    <net code="23" name="Net-(J3-Pad1)">
-      <node ref="J3" pin="1"/>
-    </net>
-    <net code="24" name="Net-(D5-Pad2)">
-      <node ref="D5" pin="2"/>
-      <node ref="R5" pin="1"/>
-    </net>
-    <net code="25" name="Net-(D4-Pad2)">
-      <node ref="R4" pin="1"/>
-      <node ref="D4" pin="2"/>
-    </net>
-    <net code="26" name="nCONFIG">
-      <node ref="D7" pin="14"/>
-      <node ref="J3" pin="15"/>
-    </net>
-    <net code="27" name="PI_GPIO19/SPI1_MISO">
-      <node ref="D7" pin="28"/>
-      <node ref="J3" pin="35"/>
-    </net>
-    <net code="28" name="Net-(J3-Pad27)">
-      <node ref="J3" pin="27"/>
-    </net>
-    <net code="29" name="Net-(J3-Pad28)">
-      <node ref="J3" pin="28"/>
-    </net>
-    <net code="30" name="PI_GPIO20/SPI1_MOSI">
-      <node ref="D7" pin="31"/>
-      <node ref="J3" pin="38"/>
-    </net>
-    <net code="31" name="DATA">
-      <node ref="J3" pin="19"/>
-      <node ref="D7" pin="13"/>
-    </net>
-    <net code="32" name="Net-(J3-Pad25)">
-      <node ref="J3" pin="25"/>
-      <node ref="J3" pin="9"/>
-      <node ref="J3" pin="39"/>
-    </net>
-    <net code="33" name="PI_GPIO21/SPI1_SCLK">
-      <node ref="J3" pin="40"/>
-      <node ref="D7" pin="32"/>
-    </net>
-    <net code="34" name="CONF_DONE">
-      <node ref="J3" pin="11"/>
-      <node ref="D7" pin="92"/>
-      <node ref="D1" pin="1"/>
-      <node ref="R14" pin="2"/>
-    </net>
-    <net code="35" name="nSTATUS">
-      <node ref="D7" pin="9"/>
-      <node ref="J3" pin="13"/>
-      <node ref="R13" pin="1"/>
-    </net>
-    <net code="36" name="DCLK">
-      <node ref="D7" pin="12"/>
-      <node ref="J3" pin="23"/>
-    </net>
-    <net code="37" name="UART0_RX">
-      <node ref="J3" pin="10"/>
-      <node ref="J4" pin="10"/>
-    </net>
-    <net code="38" name="/interface.sch/IO_46">
-      <node ref="J4" pin="4"/>
-      <node ref="D7" pin="46"/>
-    </net>
-    <net code="39" name="/interface.sch/IO_49">
-      <node ref="J4" pin="6"/>
-      <node ref="D7" pin="49"/>
-    </net>
-    <net code="40" name="INT_N">
-      <node ref="R21" pin="1"/>
-      <node ref="D9" pin="53"/>
-      <node ref="D7" pin="7"/>
-    </net>
-    <net code="41" name="IO_6">
-      <node ref="J3" pin="16"/>
-      <node ref="D7" pin="6"/>
-    </net>
-    <net code="42" name="IO_8">
-      <node ref="D7" pin="8"/>
-      <node ref="J3" pin="18"/>
-    </net>
-    <net code="43" name="UART0_TX">
-      <node ref="J3" pin="8"/>
-      <node ref="J4" pin="8"/>
-    </net>
-    <net code="44" name="/interface.sch/IO_44">
-      <node ref="J4" pin="2"/>
-      <node ref="D7" pin="44"/>
-    </net>
-    <net code="45" name="/interface.sch/IO_39">
-      <node ref="J4" pin="3"/>
-      <node ref="D7" pin="39"/>
-    </net>
-    <net code="46" name="IO_50">
-      <node ref="J3" pin="7"/>
-      <node ref="D7" pin="50"/>
-    </net>
-    <net code="47" name="/interface.sch/IO_42">
-      <node ref="D7" pin="42"/>
-      <node ref="J4" pin="5"/>
-    </net>
-    <net code="48" name="/interface.sch/IO_43">
-      <node ref="J4" pin="7"/>
-      <node ref="D7" pin="43"/>
-    </net>
-    <net code="49" name="IO_98">
-      <node ref="J3" pin="32"/>
-      <node ref="D7" pin="98"/>
-    </net>
-    <net code="50" name="IO_86">
-      <node ref="D7" pin="86"/>
+    <net code="5" name="IO_10">
       <node ref="J3" pin="24"/>
+      <node ref="U5" pin="10"/>
     </net>
-    <net code="51" name="IO_87">
-      <node ref="J3" pin="26"/>
-      <node ref="D7" pin="87"/>
+    <net code="6" name="USER_LED0">
+      <node ref="U5" pin="11"/>
+      <node ref="VD2" pin="1"/>
     </net>
-    <net code="52" name="IO_83">
-      <node ref="J3" pin="37"/>
-      <node ref="D7" pin="83"/>
-    </net>
-    <net code="53" name="IO_80">
-      <node ref="D7" pin="80"/>
-      <node ref="J3" pin="33"/>
-    </net>
-    <net code="54" name="IO_77">
-      <node ref="D7" pin="77"/>
-      <node ref="J3" pin="31"/>
-    </net>
-    <net code="55" name="IO_76">
-      <node ref="D7" pin="76"/>
-      <node ref="J3" pin="29"/>
-    </net>
-    <net code="56" name="IO_85">
-      <node ref="J3" pin="22"/>
-      <node ref="D7" pin="85"/>
-    </net>
-    <net code="57" name="Net-(D7-Pad100)">
-      <node ref="D7" pin="100"/>
-    </net>
-    <net code="58" name="Net-(D7-Pad101)">
-      <node ref="D7" pin="101"/>
-    </net>
-    <net code="59" name="Net-(D7-Pad103)">
-      <node ref="D7" pin="103"/>
-    </net>
-    <net code="60" name="IO_99">
-      <node ref="D7" pin="99"/>
+    <net code="7" name="DCLK">
+      <node ref="U5" pin="12"/>
       <node ref="J3" pin="21"/>
     </net>
-    <net code="61" name="IO_51">
-      <node ref="D7" pin="51"/>
-      <node ref="J3" pin="12"/>
+    <net code="8" name="DATA">
+      <node ref="J3" pin="22"/>
+      <node ref="U5" pin="13"/>
     </net>
-    <net code="62" name="Net-(J2-Pad1)">
+    <net code="9" name="nCONFIG">
+      <node ref="U5" pin="14"/>
+      <node ref="J3" pin="19"/>
+    </net>
+    <net code="10" name="nSTATUS">
+      <node ref="U5" pin="9"/>
+      <node ref="R15" pin="1"/>
+      <node ref="J3" pin="23"/>
+    </net>
+    <net code="11" name="JTAG_TDI">
+      <node ref="U5" pin="15"/>
+      <node ref="J1" pin="9"/>
+      <node ref="U3" pin="3"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="12" name="JTAG_TCK">
+      <node ref="J1" pin="1"/>
+      <node ref="U3" pin="1"/>
+      <node ref="R10" pin="2"/>
+      <node ref="U5" pin="16"/>
+    </net>
+    <net code="13" name="JTAG_TMS">
+      <node ref="R9" pin="2"/>
+      <node ref="U5" pin="18"/>
+      <node ref="U3" pin="4"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="14" name="JTAG_TDO">
+      <node ref="J1" pin="3"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U5" pin="20"/>
+    </net>
+    <net code="15" name="Net-(U2-Pad3)">
+      <node ref="U7" pin="1"/>
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="16" name="+3V3">
+      <node ref="R12" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="J4" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="J1" pin="4"/>
+      <node ref="U5" pin="139"/>
+      <node ref="U5" pin="40"/>
+      <node ref="U5" pin="81"/>
+      <node ref="U5" pin="62"/>
+      <node ref="U5" pin="93"/>
+      <node ref="L11" pin="2"/>
+      <node ref="U5" pin="26"/>
+      <node ref="U5" pin="56"/>
+      <node ref="U5" pin="17"/>
+      <node ref="U5" pin="47"/>
+      <node ref="U5" pin="130"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U3" pin="5"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="R9" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="L3" pin="2"/>
+      <node ref="R21" pin="2"/>
+      <node ref="L2" pin="2"/>
+      <node ref="R16" pin="1"/>
+      <node ref="C51" pin="1"/>
+      <node ref="C47" pin="1"/>
+      <node ref="C46" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R14" pin="1"/>
+      <node ref="R15" pin="2"/>
+      <node ref="C36" pin="1"/>
+      <node ref="C34" pin="1"/>
+      <node ref="C50" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="C42" pin="1"/>
+      <node ref="C38" pin="1"/>
+      <node ref="U2" pin="4"/>
+      <node ref="C35" pin="1"/>
+      <node ref="C33" pin="1"/>
+      <node ref="C43" pin="1"/>
+      <node ref="C39" pin="1"/>
+      <node ref="U7" pin="2"/>
+      <node ref="U5" pin="122"/>
+      <node ref="U7" pin="6"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U5" pin="117"/>
+    </net>
+    <net code="17" name="CONF_DONE">
+      <node ref="U5" pin="92"/>
+      <node ref="VD1" pin="1"/>
+      <node ref="J3" pin="11"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="18" name="Net-(R1-Pad1)">
+      <node ref="VD1" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="19" name="+5V">
+      <node ref="C27" pin="1"/>
+      <node ref="U10" pin="8"/>
+      <node ref="U10" pin="1"/>
+      <node ref="C29" pin="1"/>
+      <node ref="C28" pin="1"/>
+      <node ref="J3" pin="2"/>
+      <node ref="J3" pin="4"/>
+      <node ref="U11" pin="1"/>
+      <node ref="U9" pin="8"/>
+      <node ref="U9" pin="1"/>
+      <node ref="U11" pin="8"/>
+    </net>
+    <net code="20" name="Net-(R40-Pad1)">
+      <node ref="R40" pin="1"/>
+      <node ref="U5" pin="97"/>
+    </net>
+    <net code="21" name="PI_GPIO16/SPI1_CS0">
+      <node ref="J3" pin="36"/>
+      <node ref="U5" pin="137"/>
+    </net>
+    <net code="22" name="PI_GPIO19/SPI1_MISO">
+      <node ref="U5" pin="136"/>
+      <node ref="J3" pin="35"/>
+    </net>
+    <net code="23" name="UART0_TX">
+      <node ref="J4" pin="8"/>
+      <node ref="J3" pin="8"/>
+    </net>
+    <net code="24" name="UART0_RX">
+      <node ref="J4" pin="10"/>
+      <node ref="J3" pin="10"/>
+    </net>
+    <net code="25" name="IO_86">
+      <node ref="U5" pin="32"/>
+      <node ref="J3" pin="16"/>
+    </net>
+    <net code="26" name="IO_8">
+      <node ref="J3" pin="26"/>
+      <node ref="U5" pin="8"/>
+    </net>
+    <net code="27" name="IO_143">
+      <node ref="U5" pin="143"/>
+      <node ref="J3" pin="32"/>
+    </net>
+    <net code="28" name="PI_GPIO20/SPI1_MOSI">
+      <node ref="J3" pin="38"/>
+      <node ref="U5" pin="135"/>
+    </net>
+    <net code="29" name="PI_GPIO21/SPI1_SCLK">
+      <node ref="J3" pin="40"/>
+      <node ref="U5" pin="132"/>
+    </net>
+    <net code="30" name="Net-(J2-Pad1)">
+      <node ref="R13" pin="2"/>
       <node ref="U1" pin="7"/>
-      <node ref="R12" pin="2"/>
       <node ref="J2" pin="1"/>
     </net>
-    <net code="63" name="SCL">
-      <node ref="R11" pin="2"/>
-      <node ref="U1" pin="6"/>
-      <node ref="J3" pin="5"/>
+    <net code="31" name="Net-(R36-Pad2)">
+      <node ref="R36" pin="2"/>
+      <node ref="U7" pin="3"/>
     </net>
-    <net code="64" name="Net-(J1-Pad6)">
-      <node ref="J1" pin="6"/>
+    <net code="32" name="25M_B">
+      <node ref="U6" pin="61"/>
+      <node ref="R37" pin="1"/>
     </net>
-    <net code="65" name="Net-(J1-Pad7)">
+    <net code="33" name="Net-(R37-Pad2)">
+      <node ref="U7" pin="8"/>
+      <node ref="R37" pin="2"/>
+    </net>
+    <net code="34" name="Net-(R38-Pad1)">
+      <node ref="R38" pin="1"/>
+      <node ref="U5" pin="94"/>
+    </net>
+    <net code="35" name="/interface.sch/IO_51">
+      <node ref="J4" pin="7"/>
+      <node ref="U5" pin="51"/>
+    </net>
+    <net code="36" name="Net-(R39-Pad1)">
+      <node ref="R39" pin="1"/>
+      <node ref="U5" pin="96"/>
+    </net>
+    <net code="37" name="IO_99">
+      <node ref="J3" pin="13"/>
+      <node ref="U5" pin="33"/>
+    </net>
+    <net code="38" name="IO_6">
+      <node ref="J3" pin="27"/>
+      <node ref="U5" pin="6"/>
+    </net>
+    <net code="39" name="IO_7">
+      <node ref="U5" pin="7"/>
+      <node ref="J3" pin="28"/>
+    </net>
+    <net code="40" name="IO_39">
+      <node ref="J3" pin="12"/>
+      <node ref="U5" pin="39"/>
+    </net>
+    <net code="41" name="/interface.sch/IO_50">
+      <node ref="U5" pin="50"/>
+      <node ref="J4" pin="6"/>
+    </net>
+    <net code="42" name="IO_42">
+      <node ref="J3" pin="7"/>
+      <node ref="U5" pin="42"/>
+    </net>
+    <net code="43" name="IO_144">
+      <node ref="J3" pin="29"/>
+      <node ref="U5" pin="144"/>
+    </net>
+    <net code="44" name="Net-(U7-Pad5)">
+      <node ref="U7" pin="5"/>
+    </net>
+    <net code="45" name="Net-(U7-Pad7)">
+      <node ref="U7" pin="7"/>
+    </net>
+    <net code="46" name="Net-(R8-Pad1)">
+      <node ref="U2" pin="1"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="47" name="Net-(R4-Pad1)">
+      <node ref="VD4" pin="2"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="48" name="Net-(R5-Pad1)">
+      <node ref="VD5" pin="2"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="49" name="GND">
+      <node ref="C13" pin="2"/>
+      <node ref="C26" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C24" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C54" pin="2"/>
+      <node ref="C56" pin="2"/>
+      <node ref="C58" pin="2"/>
+      <node ref="C60" pin="2"/>
+      <node ref="C62" pin="2"/>
+      <node ref="C64" pin="2"/>
+      <node ref="C55" pin="2"/>
+      <node ref="C53" pin="2"/>
+      <node ref="C57" pin="2"/>
+      <node ref="C59" pin="2"/>
+      <node ref="U5" pin="48"/>
+      <node ref="U5" pin="57"/>
+      <node ref="C51" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="R20" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C23" pin="2"/>
+      <node ref="L6" pin="2"/>
+      <node ref="R19" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="U5" pin="127"/>
+      <node ref="U5" pin="110"/>
+      <node ref="U5" pin="126"/>
+      <node ref="U5" pin="79"/>
+      <node ref="U6" pin="65"/>
+      <node ref="U6" pin="64"/>
+      <node ref="C44" pin="2"/>
+      <node ref="U5" pin="131"/>
+      <node ref="U5" pin="140"/>
+      <node ref="R24" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="U5" pin="55"/>
+      <node ref="U5" pin="54"/>
+      <node ref="R18" pin="2"/>
+      <node ref="U5" pin="89"/>
+      <node ref="U5" pin="88"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C52" pin="2"/>
+      <node ref="U6" pin="9"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="U5" pin="19"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C48" pin="2"/>
+      <node ref="C47" pin="2"/>
+      <node ref="C30" pin="2"/>
+      <node ref="C29" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="R33" pin="1"/>
+      <node ref="C31" pin="2"/>
+      <node ref="C27" pin="2"/>
+      <node ref="C46" pin="2"/>
+      <node ref="C42" pin="2"/>
+      <node ref="C38" pin="2"/>
+      <node ref="C35" pin="2"/>
+      <node ref="C32" pin="2"/>
+      <node ref="U10" pin="2"/>
+      <node ref="U10" pin="3"/>
+      <node ref="U10" pin="9"/>
+      <node ref="U5" pin="2"/>
+      <node ref="U5" pin="36"/>
+      <node ref="U11" pin="9"/>
+      <node ref="U9" pin="2"/>
+      <node ref="U9" pin="3"/>
+      <node ref="U5" pin="123"/>
+      <node ref="U9" pin="9"/>
+      <node ref="R35" pin="1"/>
+      <node ref="U5" pin="4"/>
+      <node ref="R31" pin="1"/>
+      <node ref="U11" pin="2"/>
+      <node ref="U11" pin="3"/>
+      <node ref="U5" pin="118"/>
+      <node ref="C33" pin="2"/>
+      <node ref="C63" pin="2"/>
+      <node ref="U5" pin="27"/>
+      <node ref="U5" pin="95"/>
+      <node ref="U5" pin="74"/>
+      <node ref="U5" pin="64"/>
+      <node ref="U5" pin="63"/>
+      <node ref="U5" pin="82"/>
+      <node ref="C65" pin="2"/>
+      <node ref="C66" pin="2"/>
+      <node ref="U5" pin="108"/>
+      <node ref="U5" pin="41"/>
+      <node ref="U5" pin="30"/>
+      <node ref="C39" pin="2"/>
+      <node ref="C43" pin="2"/>
+      <node ref="C41" pin="2"/>
+      <node ref="C36" pin="2"/>
+      <node ref="C34" pin="2"/>
+      <node ref="U5" pin="145"/>
+      <node ref="U5" pin="104"/>
+      <node ref="C37" pin="2"/>
+      <node ref="C40" pin="2"/>
+      <node ref="C61" pin="2"/>
+      <node ref="C45" pin="2"/>
+      <node ref="C49" pin="2"/>
+      <node ref="C50" pin="2"/>
+      <node ref="U5" pin="53"/>
+      <node ref="U5" pin="24"/>
+      <node ref="U5" pin="21"/>
+      <node ref="U5" pin="22"/>
+      <node ref="U5" pin="25"/>
+      <node ref="U5" pin="23"/>
+      <node ref="J1" pin="10"/>
+      <node ref="R10" pin="1"/>
+      <node ref="U3" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R38" pin="2"/>
+      <node ref="VD6" pin="1"/>
+      <node ref="J4" pin="9"/>
+      <node ref="J1" pin="2"/>
+      <node ref="J3" pin="30"/>
+      <node ref="J3" pin="14"/>
+      <node ref="J3" pin="34"/>
+      <node ref="J3" pin="20"/>
+      <node ref="J3" pin="9"/>
+      <node ref="J3" pin="25"/>
+      <node ref="J3" pin="6"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U5" pin="128"/>
+      <node ref="U5" pin="129"/>
+      <node ref="U5" pin="90"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U7" pin="4"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R39" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="U5" pin="91"/>
+      <node ref="R40" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="J3" pin="39"/>
+      <node ref="J2" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="50" name="IO_133">
+      <node ref="J3" pin="37"/>
+      <node ref="U5" pin="133"/>
+    </net>
+    <net code="51" name="IO_141">
+      <node ref="J3" pin="33"/>
+      <node ref="U5" pin="141"/>
+    </net>
+    <net code="52" name="IO_142">
+      <node ref="U5" pin="142"/>
+      <node ref="J3" pin="31"/>
+    </net>
+    <net code="53" name="USER_LED2">
+      <node ref="VD4" pin="1"/>
+      <node ref="U5" pin="59"/>
+    </net>
+    <net code="54" name="USER_LED3">
+      <node ref="VD5" pin="1"/>
+      <node ref="U5" pin="58"/>
+    </net>
+    <net code="55" name="TX_CLK">
+      <node ref="U6" pin="57"/>
+      <node ref="U5" pin="100"/>
+    </net>
+    <net code="56" name="GTX_CLK">
+      <node ref="U5" pin="99"/>
+      <node ref="U6" pin="32"/>
+    </net>
+    <net code="57" name="IO_87">
+      <node ref="J3" pin="18"/>
+      <node ref="U5" pin="28"/>
+    </net>
+    <net code="58" name="IO_85">
+      <node ref="J3" pin="15"/>
+      <node ref="U5" pin="31"/>
+    </net>
+    <net code="59" name="TXD2">
+      <node ref="U5" pin="103"/>
+      <node ref="U6" pin="23"/>
+    </net>
+    <net code="60" name="TXD0">
+      <node ref="U5" pin="106"/>
+      <node ref="U6" pin="21"/>
+    </net>
+    <net code="61" name="TXD1">
+      <node ref="U5" pin="105"/>
+      <node ref="U6" pin="22"/>
+    </net>
+    <net code="62" name="TXD3">
+      <node ref="U5" pin="101"/>
+      <node ref="U6" pin="24"/>
+    </net>
+    <net code="63" name="25M_A">
+      <node ref="R36" pin="1"/>
+      <node ref="U5" pin="52"/>
+    </net>
+    <net code="64" name="Net-(J1-Pad7)">
       <node ref="J1" pin="7"/>
+    </net>
+    <net code="65" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
     </net>
     <net code="66" name="Net-(J1-Pad8)">
       <node ref="J1" pin="8"/>
     </net>
-    <net code="67" name="JTAG_TMS">
-      <node ref="D7" pin="18"/>
-      <node ref="U2" pin="3"/>
-      <node ref="R8" pin="2"/>
-      <node ref="J1" pin="5"/>
+    <net code="67" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
     </net>
-    <net code="68" name="JTAG_TDI">
-      <node ref="D7" pin="15"/>
-      <node ref="J1" pin="9"/>
-      <node ref="U2" pin="4"/>
-      <node ref="R7" pin="2"/>
-    </net>
-    <net code="69" name="SDA">
-      <node ref="J3" pin="3"/>
-      <node ref="R10" pin="2"/>
+    <net code="68" name="SDA">
+      <node ref="R11" pin="2"/>
       <node ref="U1" pin="5"/>
+      <node ref="J3" pin="3"/>
     </net>
-    <net code="70" name="Net-(C10-Pad1)">
+    <net code="69" name="Net-(J3-Pad17)">
+      <node ref="J3" pin="17"/>
+    </net>
+    <net code="70" name="SCL">
+      <node ref="J3" pin="5"/>
+      <node ref="U1" pin="6"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="71" name="Net-(R8-Pad2)">
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="73" name="/interface.sch/IO_44">
+      <node ref="J4" pin="3"/>
+      <node ref="U5" pin="44"/>
+    </net>
+    <net code="74" name="/interface.sch/IO_43">
+      <node ref="J4" pin="2"/>
+      <node ref="U5" pin="43"/>
+    </net>
+    <net code="75" name="/interface.sch/IO_46">
+      <node ref="U5" pin="46"/>
+      <node ref="J4" pin="4"/>
+    </net>
+    <net code="76" name="/interface.sch/IO_49">
+      <node ref="U5" pin="49"/>
+      <node ref="J4" pin="5"/>
+    </net>
+    <net code="77" name="/ethernet.sch/AVDDL">
+      <node ref="C20" pin="1"/>
+      <node ref="U6" pin="12"/>
+      <node ref="U6" pin="13"/>
+      <node ref="L4" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U6" pin="4"/>
+      <node ref="U6" pin="5"/>
+      <node ref="C24" pin="1"/>
+    </net>
+    <net code="78" name="Net-(J5-Pad18)">
+      <node ref="L6" pin="1"/>
+      <node ref="J5" pin="19"/>
+      <node ref="J5" pin="18"/>
+    </net>
+    <net code="79" name="/ethernet.sch/TXRXA+">
+      <node ref="J5" pin="11"/>
+      <node ref="U6" pin="2"/>
+    </net>
+    <net code="80" name="/ethernet.sch/TXRXA-">
+      <node ref="U6" pin="3"/>
+      <node ref="J5" pin="10"/>
+    </net>
+    <net code="81" name="/ethernet.sch/TXRXB+">
+      <node ref="J5" pin="4"/>
+      <node ref="U6" pin="7"/>
+    </net>
+    <net code="82" name="/ethernet.sch/TXRXC+">
+      <node ref="U6" pin="10"/>
+      <node ref="J5" pin="3"/>
+    </net>
+    <net code="83" name="/ethernet.sch/TXRXC-">
+      <node ref="U6" pin="11"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="84" name="/ethernet.sch/TXRXD+">
+      <node ref="U6" pin="14"/>
+      <node ref="J5" pin="8"/>
+    </net>
+    <net code="85" name="/ethernet.sch/TXRXD-">
+      <node ref="J5" pin="9"/>
+      <node ref="U6" pin="15"/>
+    </net>
+    <net code="86" name="INT_N">
+      <node ref="U6" pin="53"/>
+      <node ref="R22" pin="1"/>
+      <node ref="U5" pin="112"/>
+    </net>
+    <net code="87" name="MDI_LED_Y">
+      <node ref="J5" pin="13"/>
+      <node ref="R26" pin="2"/>
+      <node ref="U6" pin="17"/>
+    </net>
+    <net code="88" name="MDI_LED_G">
+      <node ref="R25" pin="2"/>
+      <node ref="U6" pin="19"/>
+      <node ref="J5" pin="17"/>
+    </net>
+    <net code="89" name="RX_CLK">
+      <node ref="U5" pin="98"/>
+      <node ref="R27" pin="2"/>
+      <node ref="U6" pin="48"/>
+    </net>
+    <net code="90" name="DVDDH">
+      <node ref="C7" pin="1"/>
+      <node ref="R28" pin="2"/>
+      <node ref="R29" pin="1"/>
+      <node ref="R17" pin="2"/>
+      <node ref="C23" pin="1"/>
+      <node ref="C19" pin="1"/>
+      <node ref="L3" pin="1"/>
+      <node ref="U6" pin="30"/>
+      <node ref="C11" pin="1"/>
+      <node ref="U6" pin="40"/>
+      <node ref="U6" pin="18"/>
+      <node ref="U6" pin="46"/>
+      <node ref="R23" pin="2"/>
+      <node ref="R27" pin="1"/>
+      <node ref="R25" pin="1"/>
+      <node ref="R22" pin="2"/>
+      <node ref="R26" pin="1"/>
+    </net>
+    <net code="91" name="/ethernet.sch/RESET_N">
+      <node ref="C4" pin="1"/>
+      <node ref="R16" pin="2"/>
+      <node ref="U5" pin="114"/>
+      <node ref="U6" pin="56"/>
+    </net>
+    <net code="92" name="CLK_125M">
+      <node ref="U6" pin="55"/>
+      <node ref="U5" pin="113"/>
+      <node ref="R23" pin="1"/>
+    </net>
+    <net code="93" name="Net-(R24-Pad1)">
+      <node ref="U6" pin="63"/>
+      <node ref="R24" pin="1"/>
+    </net>
+    <net code="94" name="Net-(J5-Pad14)">
+      <node ref="R28" pin="1"/>
+      <node ref="J5" pin="14"/>
+    </net>
+    <net code="95" name="Net-(J5-Pad16)">
+      <node ref="J5" pin="16"/>
+      <node ref="R29" pin="2"/>
+    </net>
+    <net code="96" name="/ethernet.sch/AVDDH">
+      <node ref="U6" pin="1"/>
       <node ref="C22" pin="1"/>
       <node ref="C10" pin="1"/>
       <node ref="C18" pin="1"/>
       <node ref="L2" pin="1"/>
-      <node ref="D9" pin="1"/>
-      <node ref="D9" pin="62"/>
-      <node ref="D9" pin="16"/>
+      <node ref="U6" pin="16"/>
+      <node ref="U6" pin="62"/>
     </net>
-    <net code="71" name="Net-(L6-Pad1)">
-      <node ref="X1" pin="18"/>
-      <node ref="X1" pin="19"/>
-      <node ref="L6" pin="1"/>
+    <net code="97" name="+1V2">
+      <node ref="L13" pin="1"/>
+      <node ref="U5" pin="102"/>
+      <node ref="U5" pin="38"/>
+      <node ref="U5" pin="78"/>
+      <node ref="U5" pin="45"/>
+      <node ref="U5" pin="61"/>
+      <node ref="U5" pin="5"/>
+      <node ref="U5" pin="70"/>
+      <node ref="U5" pin="34"/>
+      <node ref="U5" pin="84"/>
+      <node ref="L12" pin="2"/>
+      <node ref="C53" pin="1"/>
+      <node ref="L5" pin="2"/>
+      <node ref="C55" pin="1"/>
+      <node ref="C57" pin="1"/>
+      <node ref="U5" pin="134"/>
+      <node ref="C59" pin="1"/>
+      <node ref="C64" pin="1"/>
+      <node ref="U5" pin="138"/>
+      <node ref="C56" pin="1"/>
+      <node ref="C58" pin="1"/>
+      <node ref="C60" pin="1"/>
+      <node ref="C62" pin="1"/>
+      <node ref="U5" pin="29"/>
+      <node ref="C54" pin="1"/>
+      <node ref="U5" pin="116"/>
+      <node ref="C66" pin="1"/>
+      <node ref="C65" pin="1"/>
+      <node ref="L1" pin="2"/>
+      <node ref="C61" pin="1"/>
+      <node ref="L4" pin="2"/>
+      <node ref="C63" pin="1"/>
+      <node ref="U5" pin="124"/>
     </net>
-    <net code="72" name="/ethernet.sch/TXRXP_A">
-      <node ref="X1" pin="11"/>
-      <node ref="U4" pin="1"/>
-      <node ref="D9" pin="2"/>
-    </net>
-    <net code="73" name="/ethernet.sch/TXRXM_A">
-      <node ref="U4" pin="3"/>
-      <node ref="D9" pin="3"/>
-      <node ref="X1" pin="10"/>
-    </net>
-    <net code="74" name="CLK_125M">
-      <node ref="R22" pin="1"/>
-      <node ref="D9" pin="55"/>
-      <node ref="D7" pin="54"/>
-    </net>
-    <net code="75" name="/ethernet.sch/RXD0">
-      <node ref="R16" pin="1"/>
-      <node ref="D9" pin="44"/>
-      <node ref="D7" pin="111"/>
-    </net>
-    <net code="76" name="DVDDH">
-      <node ref="R24" pin="1"/>
-      <node ref="D9" pin="40"/>
-      <node ref="R25" pin="1"/>
-      <node ref="R26" pin="1"/>
-      <node ref="D9" pin="46"/>
-      <node ref="R22" pin="2"/>
-      <node ref="D9" pin="18"/>
-      <node ref="D9" pin="30"/>
-      <node ref="L3" pin="1"/>
-      <node ref="C23" pin="1"/>
-      <node ref="R21" pin="2"/>
-      <node ref="C19" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="R27" pin="2"/>
-      <node ref="C11" pin="1"/>
-      <node ref="R28" pin="1"/>
-      <node ref="R16" pin="2"/>
-    </net>
-    <net code="77" name="/ethernet.sch/RXD1">
-      <node ref="D9" pin="43"/>
-      <node ref="D7" pin="112"/>
-      <node ref="R17" pin="1"/>
-    </net>
-    <net code="78" name="/ethernet.sch/RXD2">
-      <node ref="D7" pin="113"/>
-      <node ref="R18" pin="1"/>
-      <node ref="D9" pin="41"/>
-    </net>
-    <net code="79" name="/ethernet.sch/RXD3">
-      <node ref="R19" pin="1"/>
-      <node ref="D7" pin="114"/>
-      <node ref="D9" pin="39"/>
-    </net>
-    <net code="80" name="Net-(D9-Pad63)">
-      <node ref="D9" pin="63"/>
-      <node ref="R23" pin="1"/>
-    </net>
-    <net code="81" name="Net-(R27-Pad1)">
-      <node ref="X1" pin="14"/>
-      <node ref="R27" pin="1"/>
-    </net>
-    <net code="82" name="Net-(R28-Pad2)">
-      <node ref="X1" pin="16"/>
-      <node ref="R28" pin="2"/>
-    </net>
-    <net code="83" name="MDI_LED_Y">
-      <node ref="D9" pin="17"/>
-      <node ref="R25" pin="2"/>
-      <node ref="X1" pin="13"/>
-    </net>
-    <net code="84" name="MDI_LED_G">
-      <node ref="X1" pin="17"/>
-      <node ref="D9" pin="19"/>
-      <node ref="R24" pin="2"/>
-    </net>
-    <net code="85" name="/ethernet.sch/RX_CLK">
-      <node ref="R26" pin="2"/>
-      <node ref="D9" pin="48"/>
-      <node ref="D7" pin="125"/>
-    </net>
-    <net code="86" name="Net-(C5-Pad1)">
-      <node ref="D9" pin="59"/>
-      <node ref="L1" pin="1"/>
+    <net code="98" name="/ethernet.sch/AVDDL_PLL">
       <node ref="C6" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="U6" pin="59"/>
       <node ref="C5" pin="1"/>
     </net>
-    <net code="87" name="AVDDL">
-      <node ref="D9" pin="4"/>
-      <node ref="D9" pin="12"/>
-      <node ref="D9" pin="13"/>
-      <node ref="D9" pin="5"/>
-      <node ref="C20" pin="1"/>
-      <node ref="L4" pin="1"/>
-      <node ref="C12" pin="1"/>
-      <node ref="C8" pin="1"/>
-      <node ref="C24" pin="1"/>
-    </net>
-    <net code="88" name="DVDDL">
-      <node ref="C13" pin="1"/>
-      <node ref="D9" pin="42"/>
-      <node ref="D9" pin="54"/>
-      <node ref="D9" pin="25"/>
-      <node ref="D9" pin="36"/>
+    <net code="99" name="/ethernet.sch/DVDDL">
+      <node ref="U6" pin="25"/>
+      <node ref="U6" pin="20"/>
       <node ref="L5" pin="1"/>
+      <node ref="U6" pin="36"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U6" pin="54"/>
+      <node ref="U6" pin="42"/>
       <node ref="C21" pin="1"/>
       <node ref="C25" pin="1"/>
+      <node ref="C13" pin="1"/>
       <node ref="C26" pin="1"/>
-      <node ref="D9" pin="20"/>
-      <node ref="C9" pin="1"/>
     </net>
-    <net code="89" name="+1V2">
-      <node ref="D7" pin="38"/>
-      <node ref="D7" pin="78"/>
-      <node ref="D7" pin="102"/>
-      <node ref="C437" pin="1"/>
-      <node ref="C438" pin="1"/>
-      <node ref="L1" pin="2"/>
-      <node ref="L5" pin="2"/>
-      <node ref="C436" pin="1"/>
-      <node ref="C428" pin="1"/>
-      <node ref="C430" pin="1"/>
-      <node ref="D7" pin="116"/>
-      <node ref="C432" pin="1"/>
-      <node ref="C434" pin="1"/>
-      <node ref="D7" pin="134"/>
-      <node ref="D7" pin="124"/>
-      <node ref="L4" pin="2"/>
-      <node ref="L407" pin="1"/>
-      <node ref="D7" pin="138"/>
-      <node ref="D7" pin="34"/>
-      <node ref="L405" pin="2"/>
-      <node ref="C435" pin="1"/>
-      <node ref="D7" pin="45"/>
-      <node ref="D7" pin="61"/>
-      <node ref="C433" pin="1"/>
-      <node ref="C431" pin="1"/>
-      <node ref="C429" pin="1"/>
-      <node ref="C427" pin="1"/>
-      <node ref="D7" pin="84"/>
-      <node ref="D7" pin="29"/>
-      <node ref="D7" pin="5"/>
-      <node ref="D7" pin="70"/>
+    <net code="101" name="/ethernet.sch/TACT3">
+      <node ref="J5" pin="1"/>
+      <node ref="C16" pin="1"/>
     </net>
-    <net code="91" name="/ethernet.sch/TXRXM_B">
-      <node ref="X1" pin="5"/>
-      <node ref="U4" pin="6"/>
-      <node ref="D9" pin="8"/>
-    </net>
-    <net code="92" name="/ethernet.sch/TXRXP_C">
-      <node ref="D9" pin="10"/>
-      <node ref="U5" pin="1"/>
-      <node ref="X1" pin="3"/>
-    </net>
-    <net code="93" name="/ethernet.sch/TXRXM_C">
-      <node ref="U5" pin="3"/>
-      <node ref="D9" pin="11"/>
-      <node ref="X1" pin="2"/>
-    </net>
-    <net code="94" name="/ethernet.sch/TXRXP_D">
-      <node ref="X1" pin="8"/>
-      <node ref="U5" pin="4"/>
-      <node ref="D9" pin="14"/>
-    </net>
-    <net code="95" name="/ethernet.sch/TXRXM_D">
-      <node ref="X1" pin="9"/>
-      <node ref="U5" pin="6"/>
-      <node ref="D9" pin="15"/>
-    </net>
-    <net code="96" name="/ethernet.sch/TACT1">
-      <node ref="X1" pin="12"/>
+    <net code="102" name="/ethernet.sch/TACT1">
+      <node ref="J5" pin="12"/>
       <node ref="C14" pin="1"/>
     </net>
-    <net code="97" name="/ethernet.sch/TACT2">
-      <node ref="X1" pin="6"/>
+    <net code="103" name="/ethernet.sch/TACT2">
       <node ref="C15" pin="1"/>
+      <node ref="J5" pin="6"/>
     </net>
-    <net code="98" name="/ethernet.sch/TACT3">
-      <node ref="C16" pin="1"/>
-      <node ref="X1" pin="1"/>
-    </net>
-    <net code="99" name="/ethernet.sch/TACT4">
+    <net code="104" name="/ethernet.sch/TACT4">
       <node ref="C17" pin="1"/>
-      <node ref="X1" pin="7"/>
+      <node ref="J5" pin="7"/>
     </net>
-    <net code="100" name="/ethernet.sch/TXRXP_B">
-      <node ref="D9" pin="7"/>
-      <node ref="X1" pin="4"/>
-      <node ref="U4" pin="4"/>
+    <net code="105" name="/ethernet.sch/TXRXB-">
+      <node ref="U6" pin="8"/>
+      <node ref="J5" pin="5"/>
     </net>
-    <net code="101" name="Net-(U4-Pad5)">
-      <node ref="U4" pin="5"/>
+    <net code="106" name="Net-(U6-Pad6)">
+      <node ref="U6" pin="6"/>
     </net>
-    <net code="102" name="Net-(U4-Pad2)">
-      <node ref="U4" pin="2"/>
+    <net code="107" name="Net-(U6-Pad60)">
+      <node ref="U6" pin="60"/>
     </net>
-    <net code="103" name="Net-(U5-Pad5)">
-      <node ref="U5" pin="5"/>
+    <net code="108" name="Net-(J5-Pad15)">
+      <node ref="J5" pin="15"/>
     </net>
-    <net code="104" name="Net-(U5-Pad2)">
-      <node ref="U5" pin="2"/>
+    <net code="109" name="Net-(U6-Pad58)">
+      <node ref="U6" pin="58"/>
     </net>
-    <net code="105" name="Net-(D9-Pad6)">
-      <node ref="D9" pin="6"/>
+    <net code="110" name="/ethernet.sch/RXD5">
+      <node ref="U6" pin="37"/>
+      <node ref="U5" pin="72"/>
     </net>
-    <net code="106" name="Net-(D9-Pad60)">
-      <node ref="D9" pin="60"/>
+    <net code="111" name="/ethernet.sch/TX_ER">
+      <node ref="U6" pin="31"/>
+      <node ref="U5" pin="80"/>
     </net>
-    <net code="107" name="Net-(X1-Pad15)">
-      <node ref="X1" pin="15"/>
+    <net code="112" name="/ethernet.sch/TX_EN">
+      <node ref="U6" pin="33"/>
+      <node ref="U5" pin="77"/>
     </net>
-    <net code="108" name="Net-(D9-Pad58)">
-      <node ref="D9" pin="58"/>
+    <net code="113" name="/ethernet.sch/RXD0">
+      <node ref="U6" pin="44"/>
+      <node ref="R17" pin="1"/>
+      <node ref="U5" pin="65"/>
     </net>
-    <net code="109" name="/ethernet.sch/TXD1">
-      <node ref="D9" pin="22"/>
-      <node ref="D7" pin="59"/>
+    <net code="114" name="/ethernet.sch/RXD1">
+      <node ref="R18" pin="1"/>
+      <node ref="U5" pin="66"/>
+      <node ref="U6" pin="43"/>
     </net>
-    <net code="110" name="/ethernet.sch/TXD0">
-      <node ref="D9" pin="21"/>
-      <node ref="D7" pin="58"/>
+    <net code="115" name="/ethernet.sch/RXD2">
+      <node ref="R19" pin="1"/>
+      <node ref="U6" pin="41"/>
+      <node ref="U5" pin="67"/>
     </net>
-    <net code="111" name="/ethernet.sch/TXD2">
-      <node ref="D9" pin="23"/>
-      <node ref="D7" pin="60"/>
-    </net>
-    <net code="112" name="/ethernet.sch/TXD3">
-      <node ref="D7" pin="65"/>
-      <node ref="D9" pin="24"/>
-    </net>
-    <net code="113" name="/ethernet.sch/TXD4">
-      <node ref="D7" pin="66"/>
-      <node ref="D9" pin="26"/>
-    </net>
-    <net code="114" name="/ethernet.sch/TXD5">
-      <node ref="D7" pin="67"/>
-      <node ref="D9" pin="27"/>
-    </net>
-    <net code="115" name="/ethernet.sch/TXD6">
-      <node ref="D9" pin="28"/>
-      <node ref="D7" pin="68"/>
-    </net>
-    <net code="116" name="/ethernet.sch/TXD7">
-      <node ref="D9" pin="29"/>
-      <node ref="D7" pin="69"/>
-    </net>
-    <net code="117" name="/ethernet.sch/MDIO">
-      <node ref="D9" pin="51"/>
+    <net code="116" name="/ethernet.sch/RXD3">
+      <node ref="U6" pin="39"/>
+      <node ref="U5" pin="68"/>
       <node ref="R20" pin="1"/>
-      <node ref="D7" pin="143"/>
     </net>
-    <net code="118" name="/ethernet.sch/TX_CLK">
-      <node ref="D7" pin="71"/>
-      <node ref="D9" pin="57"/>
+    <net code="117" name="/ethernet.sch/RXD4">
+      <node ref="U5" pin="69"/>
+      <node ref="U6" pin="38"/>
     </net>
-    <net code="119" name="/ethernet.sch/GTX_CLK">
-      <node ref="D9" pin="32"/>
-      <node ref="D7" pin="72"/>
+    <net code="118" name="/ethernet.sch/RXD6">
+      <node ref="U6" pin="35"/>
+      <node ref="U5" pin="71"/>
     </net>
-    <net code="120" name="/ethernet.sch/CRS">
-      <node ref="D7" pin="141"/>
-      <node ref="D9" pin="49"/>
+    <net code="119" name="/ethernet.sch/RXD7">
+      <node ref="U6" pin="34"/>
+      <node ref="U5" pin="76"/>
     </net>
-    <net code="121" name="/ethernet.sch/MDC">
-      <node ref="D9" pin="50"/>
-      <node ref="D7" pin="142"/>
+    <net code="120" name="/ethernet.sch/RX_DV">
+      <node ref="U5" pin="125"/>
+      <node ref="U6" pin="45"/>
     </net>
-    <net code="122" name="/ethernet.sch/COL">
-      <node ref="D9" pin="52"/>
-      <node ref="D7" pin="137"/>
+    <net code="121" name="/ethernet.sch/RX_ER">
+      <node ref="U6" pin="47"/>
+      <node ref="U5" pin="121"/>
     </net>
-    <net code="123" name="/ethernet.sch/RXD4">
-      <node ref="D9" pin="38"/>
-      <node ref="D7" pin="115"/>
+    <net code="122" name="/ethernet.sch/CRS">
+      <node ref="U6" pin="49"/>
+      <node ref="U5" pin="120"/>
     </net>
-    <net code="124" name="/ethernet.sch/RXD5">
-      <node ref="D7" pin="119"/>
-      <node ref="D9" pin="37"/>
+    <net code="123" name="/ethernet.sch/MDC">
+      <node ref="U6" pin="50"/>
+      <node ref="U5" pin="119"/>
     </net>
-    <net code="125" name="/ethernet.sch/RXD6">
-      <node ref="D9" pin="35"/>
-      <node ref="D7" pin="120"/>
+    <net code="124" name="/ethernet.sch/MDIO">
+      <node ref="U6" pin="51"/>
+      <node ref="R21" pin="1"/>
+      <node ref="U5" pin="115"/>
     </net>
-    <net code="126" name="/ethernet.sch/RXD7">
-      <node ref="D9" pin="34"/>
-      <node ref="D7" pin="121"/>
+    <net code="125" name="/ethernet.sch/TXD4">
+      <node ref="U6" pin="26"/>
+      <node ref="U5" pin="87"/>
     </net>
-    <net code="127" name="/ethernet.sch/TX_ER">
-      <node ref="D9" pin="31"/>
-      <node ref="D7" pin="132"/>
+    <net code="126" name="/ethernet.sch/TXD5">
+      <node ref="U5" pin="86"/>
+      <node ref="U6" pin="27"/>
     </net>
-    <net code="128" name="/ethernet.sch/TX_EN">
-      <node ref="D9" pin="33"/>
-      <node ref="D7" pin="133"/>
+    <net code="127" name="/ethernet.sch/TXD6">
+      <node ref="U5" pin="85"/>
+      <node ref="U6" pin="28"/>
     </net>
-    <net code="129" name="/ethernet.sch/RX_DV">
-      <node ref="D9" pin="45"/>
-      <node ref="D7" pin="135"/>
+    <net code="128" name="/ethernet.sch/TXD7">
+      <node ref="U6" pin="29"/>
+      <node ref="U5" pin="83"/>
     </net>
-    <net code="130" name="/ethernet.sch/RX_ER">
-      <node ref="D9" pin="47"/>
-      <node ref="D7" pin="136"/>
+    <net code="129" name="/ethernet.sch/COL">
+      <node ref="U6" pin="52"/>
+      <node ref="U5" pin="111"/>
     </net>
-    <net code="132" name="/ethernet.sch/RESET_N">
-      <node ref="D7" pin="144"/>
-      <node ref="C4" pin="1"/>
-      <node ref="R15" pin="2"/>
-      <node ref="D9" pin="56"/>
+    <net code="131" name="+2V5">
+      <node ref="C40" pin="1"/>
+      <node ref="C44" pin="1"/>
+      <node ref="C48" pin="1"/>
+      <node ref="C52" pin="1"/>
+      <node ref="U5" pin="3"/>
+      <node ref="U5" pin="35"/>
+      <node ref="U5" pin="75"/>
+      <node ref="L10" pin="2"/>
+      <node ref="U5" pin="107"/>
     </net>
-    <net code="133" name="Net-(C411-Pad1)">
-      <node ref="C423" pin="1"/>
-      <node ref="C419" pin="1"/>
-      <node ref="C415" pin="1"/>
-      <node ref="C411" pin="1"/>
-      <node ref="L407" pin="2"/>
-      <node ref="D7" pin="1"/>
-      <node ref="D7" pin="73"/>
-      <node ref="D7" pin="109"/>
-      <node ref="D7" pin="37"/>
+    <net code="132" name="Net-(J6-Pad4)">
+      <node ref="J6" pin="4"/>
     </net>
-    <net code="134" name="+2V5">
-      <node ref="D7" pin="107"/>
-      <node ref="D7" pin="75"/>
-      <node ref="L406" pin="2"/>
-      <node ref="D7" pin="35"/>
-      <node ref="C414" pin="1"/>
-      <node ref="D7" pin="3"/>
-      <node ref="C418" pin="1"/>
-      <node ref="C422" pin="1"/>
-      <node ref="C426" pin="1"/>
+    <net code="133" name="Net-(J6-Pad1)">
+      <node ref="J6" pin="1"/>
     </net>
-    <net code="135" name="Net-(D402-Pad6)">
-      <node ref="D402" pin="6"/>
+    <net code="134" name="Net-(J6-Pad2)">
+      <node ref="J6" pin="2"/>
     </net>
-    <net code="136" name="Net-(D402-Pad7)">
-      <node ref="D402" pin="7"/>
-      <node ref="L402" pin="1"/>
+    <net code="135" name="Net-(J6-Pad3)">
+      <node ref="J6" pin="3"/>
     </net>
-    <net code="137" name="Net-(D403-Pad6)">
-      <node ref="D403" pin="6"/>
+    <net code="136" name="Net-(U9-Pad6)">
+      <node ref="U9" pin="6"/>
     </net>
-    <net code="138" name="Net-(D401-Pad6)">
-      <node ref="D401" pin="6"/>
+    <net code="137" name="Net-(U11-Pad6)">
+      <node ref="U11" pin="6"/>
     </net>
-    <net code="139" name="Net-(D401-Pad4)">
-      <node ref="D401" pin="4"/>
-      <node ref="R401" pin="2"/>
-      <node ref="R402" pin="2"/>
+    <net code="138" name="Net-(R30-Pad2)">
+      <node ref="R30" pin="2"/>
+      <node ref="R31" pin="2"/>
+      <node ref="U9" pin="4"/>
     </net>
-    <net code="140" name="Net-(D401-Pad7)">
-      <node ref="D401" pin="7"/>
-      <node ref="L401" pin="1"/>
+    <net code="139" name="Net-(U10-Pad6)">
+      <node ref="U10" pin="6"/>
     </net>
-    <net code="141" name="Net-(D403-Pad4)">
-      <node ref="D403" pin="4"/>
-      <node ref="R405" pin="2"/>
-      <node ref="R406" pin="2"/>
+    <net code="140" name="/power.sch/3.3V_out">
+      <node ref="C31" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="L11" pin="1"/>
+      <node ref="L8" pin="2"/>
+      <node ref="U10" pin="5"/>
+      <node ref="R32" pin="1"/>
     </net>
-    <net code="142" name="Net-(D403-Pad7)">
-      <node ref="D403" pin="7"/>
-      <node ref="L403" pin="1"/>
+    <net code="141" name="Net-(R32-Pad2)">
+      <node ref="R33" pin="2"/>
+      <node ref="R32" pin="2"/>
+      <node ref="U10" pin="4"/>
     </net>
-    <net code="143" name="Net-(C406-Pad1)">
-      <node ref="C406" pin="1"/>
-      <node ref="L406" pin="1"/>
-      <node ref="L403" pin="2"/>
-      <node ref="J403" pin="1"/>
-      <node ref="R405" pin="1"/>
-      <node ref="D403" pin="5"/>
+    <net code="142" name="Net-(L8-Pad1)">
+      <node ref="U10" pin="7"/>
+      <node ref="L8" pin="1"/>
     </net>
-    <net code="144" name="Net-(C404-Pad1)">
-      <node ref="R401" pin="1"/>
-      <node ref="C404" pin="1"/>
-      <node ref="L404" pin="1"/>
-      <node ref="L401" pin="2"/>
-      <node ref="J401" pin="1"/>
-      <node ref="D401" pin="5"/>
+    <net code="143" name="/power.sch/2.5V_out">
+      <node ref="L10" pin="1"/>
+      <node ref="J7" pin="1"/>
+      <node ref="C30" pin="1"/>
+      <node ref="L7" pin="2"/>
+      <node ref="R30" pin="1"/>
+      <node ref="U9" pin="5"/>
     </net>
-    <net code="145" name="Net-(D402-Pad4)">
-      <node ref="D402" pin="4"/>
-      <node ref="R403" pin="2"/>
-      <node ref="R404" pin="2"/>
+    <net code="144" name="Net-(L7-Pad1)">
+      <node ref="U9" pin="7"/>
+      <node ref="L7" pin="1"/>
     </net>
-    <net code="146" name="Net-(C405-Pad1)">
-      <node ref="R403" pin="1"/>
-      <node ref="D402" pin="5"/>
-      <node ref="L402" pin="2"/>
-      <node ref="J402" pin="1"/>
-      <node ref="C405" pin="1"/>
-      <node ref="L405" pin="1"/>
+    <net code="145" name="Net-(C37-Pad1)">
+      <node ref="C49" pin="1"/>
+      <node ref="U5" pin="37"/>
+      <node ref="U5" pin="109"/>
+      <node ref="C45" pin="1"/>
+      <node ref="L13" pin="2"/>
+      <node ref="U5" pin="1"/>
+      <node ref="C37" pin="1"/>
+      <node ref="U5" pin="73"/>
+      <node ref="C41" pin="1"/>
+    </net>
+    <net code="146" name="Net-(R34-Pad2)">
+      <node ref="U11" pin="4"/>
+      <node ref="R34" pin="2"/>
+      <node ref="R35" pin="2"/>
+    </net>
+    <net code="147" name="/power.sch/1.2V_out">
+      <node ref="L9" pin="2"/>
+      <node ref="R34" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="L12" pin="1"/>
+      <node ref="U11" pin="5"/>
+      <node ref="J9" pin="1"/>
+    </net>
+    <net code="148" name="Net-(L9-Pad1)">
+      <node ref="L9" pin="1"/>
+      <node ref="U11" pin="7"/>
     </net>
   </nets>
 </export>
