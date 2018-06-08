@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>F:/Igor/RD/Local_FigaPI/fpgagigepi/fpgagigepi.sch</source>
+    <source>figa-pi.sch</source>
     <date>01.06.2018 12:11:31</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
@@ -10,7 +10,7 @@
         <company/>
         <rev>A</rev>
         <date/>
-        <source>fpgagigepi.sch</source>
+        <source>figa-pi.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -62,7 +62,7 @@
       <value>3mm_Mounting_Hole</value>
       <footprint>project_footprints:NPTH_3mm_ID</footprint>
       <fields/>
-      <libsource lib="fpgagigepi-cache" part="Mechanical:Mounting_Hole"/>
+      <libsource lib="figa-pi-cache" part="Mechanical:Mounting_Hole"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5834BC4A</tstamp>
     </comp>
@@ -70,7 +70,7 @@
       <value>3mm_Mounting_Hole</value>
       <footprint>project_footprints:NPTH_3mm_ID</footprint>
       <fields/>
-      <libsource lib="fpgagigepi-cache" part="Mechanical:Mounting_Hole"/>
+      <libsource lib="figa-pi-cache" part="Mechanical:Mounting_Hole"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5834BCDF</tstamp>
     </comp>
@@ -78,7 +78,7 @@
       <value>3mm_Mounting_Hole</value>
       <footprint>project_footprints:NPTH_3mm_ID</footprint>
       <fields/>
-      <libsource lib="fpgagigepi-cache" part="Mechanical:Mounting_Hole"/>
+      <libsource lib="figa-pi-cache" part="Mechanical:Mounting_Hole"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5834BD62</tstamp>
     </comp>
@@ -86,7 +86,7 @@
       <value>3mm_Mounting_Hole</value>
       <footprint>project_footprints:NPTH_3mm_ID</footprint>
       <fields/>
-      <libsource lib="fpgagigepi-cache" part="Mechanical:Mounting_Hole"/>
+      <libsource lib="figa-pi-cache" part="Mechanical:Mounting_Hole"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5834BDED</tstamp>
     </comp>
@@ -1456,7 +1456,7 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="fpgagigepi-cache" part="Mechanical:Mounting_Hole">
+    <libpart lib="figa-pi-cache" part="Mechanical:Mounting_Hole">
       <footprints>
         <fp>Mounting?Hole*</fp>
         <fp>Hole*</fp>
@@ -1598,40 +1598,40 @@
   </libparts>
   <libraries>
     <library logical="conn">
-      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+      <uri>conn.lib</uri>
     </library>
     <library logical="device">
-      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+      <uri>device.lib</uri>
     </library>
     <library logical="memory">
-      <uri>C:\Program Files\KiCad\share\kicad\library\memory.lib</uri>
+      <uri>memory.lib</uri>
     </library>
     <library logical="10cl025">
-      <uri>F:\Igor\RD\Local_FigaPI\fpgagigepi\library\10cl025.lib</uri>
+      <uri>library/10cl025.lib</uri>
     </library>
     <library logical="cfps-73">
-      <uri>F:\Igor\RD\Local_FigaPI\fpgagigepi\library\cfps-73.lib</uri>
+      <uri>library/cfps-73.lib</uri>
     </library>
     <library logical="ksz9021gn">
-      <uri>F:\Igor\RD\Local_FigaPI\fpgagigepi\library\ksz9021gn.lib</uri>
+      <uri>library/ksz9021gn.lib</uri>
     </library>
     <library logical="l829-1j1t-43">
-      <uri>F:\Igor\RD\Local_FigaPI\fpgagigepi\library\l829-1j1t-43.lib</uri>
+      <uri>library/l829-1j1t-43.lib</uri>
     </library>
     <library logical="my">
-      <uri>F:\Igor\RD\Local_FigaPI\fpgagigepi\library\my.lib</uri>
+      <uri>library/my.lib</uri>
     </library>
     <library logical="nb3l553">
-      <uri>F:\Igor\RD\Local_FigaPI\fpgagigepi\library\nb3l553.lib</uri>
+      <uri>library/nb3l553.lib</uri>
     </library>
     <library logical="nup4114upxv6t1g">
-      <uri>F:\Igor\RD\Local_FigaPI\fpgagigepi\library\nup4114upxv6t1g.lib</uri>
+      <uri>library/nup4114upxv6t1g.lib</uri>
     </library>
     <library logical="tlv62080">
-      <uri>F:\Igor\RD\Local_FigaPI\fpgagigepi\library\tlv62080.lib</uri>
+      <uri>library/tlv62080.lib</uri>
     </library>
-    <library logical="fpgagigepi-cache">
-      <uri>F:\Igor\RD\Local_FigaPI\fpgagigepi\fpgagigepi-cache.lib</uri>
+    <library logical="figa-pi-cache">
+      <uri>figa-pi-cache.lib</uri>
     </library>
   </libraries>
   <nets>

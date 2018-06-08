@@ -27,6 +27,5 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
-LibName1=C:/Program Files/KiCad/share/kicad/library/conn
 [general]
 version=1
