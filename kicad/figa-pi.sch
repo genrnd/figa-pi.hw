@@ -1,5 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:power
+LIBS:figa-pi
 LIBS:figa-pi-cache
 EELAYER 25 0
 EELAYER END
