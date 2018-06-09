@@ -1,4 +1,4 @@
-update=09/06/2018 10:20:18
+update=09/06/2018 19:20:50
 version=1
 last_client=kicad
 [pcbnew]
@@ -30,3 +30,4 @@ version=1
 LibDir=library
 [eeschema/libraries]
 LibName1=library/figa-pi
+LibName2=C:/Program Files/KiCad/share/kicad/library/graphic_symbols
