@@ -1,6 +1,8 @@
 EESchema Schematic File Version 2
 LIBS:figa-pi
 LIBS:graphic_symbols
+LIBS:device
+LIBS:switches
 LIBS:figa-pi-cache
 EELAYER 25 0
 EELAYER END
@@ -9,9 +11,9 @@ encoding utf-8
 Sheet 1 4
 Title "Figa-Pi"
 Date ""
-Rev "1.0"
+Rev "2.0"
 Comp "GENERAL RnD"
-Comment1 "07e20003"
+Comment1 "07e20003-02"
 Comment2 "I. Pototskiy"
 Comment3 ""
 Comment4 ""
@@ -89,7 +91,6 @@ F0 "interface.sch" 60
 F1 "interface.sch" 60
 F2 "PHY_25M" O R 4450 2850 60 
 F3 "CONF_DONE" I R 4450 2450 60 
-F4 "USER_LED0" O R 4450 3200 60 
 $EndSheet
 $Sheet
 S 1650 4300 2800 1400
@@ -107,8 +108,6 @@ Text Notes 2250 2250 0    197  ~ 0
 External \nconnections
 Text Notes 7250 2200 0    197  ~ 0
 PHY
-Wire Wire Line
-	4450 3200 6500 3200
 $Sheet
 S 6500 1400 1950 2100
 U 5B0D756D
@@ -116,6 +115,5 @@ F0 "ethernet.sch" 60
 F1 "ethernet.sch" 60
 F2 "CONF_DONE" O L 6500 2450 60 
 F3 "PHY_25M" I L 6500 2850 60 
-F4 "USER_LED0" I L 6500 3200 60 
 $EndSheet
 $EndSCHEMATC

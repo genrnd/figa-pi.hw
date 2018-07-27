@@ -1,4 +1,4 @@
-update=09/06/2018 19:20:50
+update=27/07/2018 17:50:55
 version=1
 last_client=kicad
 [pcbnew]
@@ -31,3 +31,5 @@ LibDir=library
 [eeschema/libraries]
 LibName1=library/figa-pi
 LibName2=C:/Program Files/KiCad/share/kicad/library/graphic_symbols
+LibName3=C:/Program Files/KiCad/share/kicad/library/device
+LibName4=C:/Program Files/KiCad/share/kicad/library/switches
