@@ -1,4 +1,4 @@
-update=27/07/2018 17:50:55
+update=31/07/2018 15:57:08
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,3 +33,13 @@ LibName1=library/figa-pi
 LibName2=C:/Program Files/KiCad/share/kicad/library/graphic_symbols
 LibName3=C:/Program Files/KiCad/share/kicad/library/device
 LibName4=C:/Program Files/KiCad/share/kicad/library/switches
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
