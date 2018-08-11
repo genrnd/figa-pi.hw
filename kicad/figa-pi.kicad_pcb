@@ -3,7 +3,7 @@
   (general
     (links 476)
     (no_connects 0)
-    (area 73.207142 52.78 155.466669 132.63)
+    (area 78.496355 60.76761 143.596357 116.867612)
     (thickness 1.6)
     (drawings 98)
     (tracks 1972)
@@ -23,16 +23,16 @@
   )
 
   (layers
-    (0 F.Cu signal hide)
+    (0 F.Cu signal)
     (1 In1.Cu power hide)
     (2 In2.Cu signal hide)
-    (31 B.Cu signal)
+    (31 B.Cu signal hide)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
-    (36 B.SilkS user)
-    (37 F.SilkS user hide)
+    (36 B.SilkS user hide)
+    (37 F.SilkS user)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
     (40 Dwgs.User user hide)
@@ -84,7 +84,7 @@
     (pad_to_paste_clearance -0.05)
     (aux_axis_origin 0 0)
     (grid_origin 136.8 74)
-    (visible_elements 7FFFFC7F)
+    (visible_elements 7FFFFA7F)
     (pcbplotparams
       (layerselection 0x010fc_80000007)
       (usegerberextensions false)
@@ -6627,6 +6627,11 @@
       (net 56 "Net-(R24-Pad1)") (solder_mask_margin 0.05))
     (pad 64 smd rect (at -3.9 3 90) (size 0.71 0.23) (layers F.Cu F.Paste F.Mask)
       (net 1 GND) (solder_mask_margin 0.05))
+    (model ${KIPRJMOD}/packages3d/QFN-64-1EP_8x8mm_Pitch0.4mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module library:L829 locked (layer F.Cu) (tedit 5B6045F2) (tstamp 5B1BC16F)
