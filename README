@@ -1,23 +1,11 @@
-Figa-Pi
-=======
+# figa-pi
 
-Figa-Pi -- expansion boad (HAT, hadwae attached top) fo Raspbey PI with
-FPGA and 1G ethenet pot.
+figa-pi -- expansion board (HAT, hardware attached top) for Raspberry
+PI with FPGA and 1G ethernet port.
 
-Open hadwae poject, made with Kicad.
+Open hardwdare poject, made with Kicad.
 
-Russian desc
-------------
-Проект Figa-Pi -- дополнительная плата с 1Gbit Ethenet для одноплатного
-компьютера Raspbey Pi.
+## Authors
 
-Среда проектирования - Kicad.
-
-Autho
-------
-
-Juy Remizov <j@gennd.u> 
-Geneal RnD LLC 
-http://gennd.com/pojects/figa-pi
-http://github.com/gennd/figa-pi
+General RnD LLC, 2018, http://genrnd.com
 
