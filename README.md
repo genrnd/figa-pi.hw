@@ -1,11 +1,13 @@
-# figa-pi
+figa-pi
+======
 
 figa-pi -- expansion board (HAT, hardware attached top) for Raspberry
 PI with FPGA and 1G ethernet port.
 
 Open hardwdare poject, made with Kicad.
 
-## Authors
+Authors
+-------
 
 General RnD LLC, 2018, http://genrnd.com
 
